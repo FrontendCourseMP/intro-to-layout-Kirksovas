@@ -58,3 +58,7 @@ body {
   font-family: Montserrat, sans-serif;
   background-color: var(--back-color--part1);
 }
+
+ul {
+  list-style: none;
+}
