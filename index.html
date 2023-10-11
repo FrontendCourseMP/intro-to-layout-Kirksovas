@@ -9,176 +9,157 @@
     <title>CF Moto</title>
 </head>
 
-<!-- Смотри
-    В сути работа хорошая, но требуется добавить div в каждую секцию, который будет выполнять функцию обертки
-    hr мы не используем, потому что они нужны только там, где невозможен или не используется css. В нашем же
-    случае мы будем его использовать, потому не трогаем. Также есть проблемы с заголовками.
-    Дальше рекомендую накинуть БЭМ на все это, чтобы получить удобную для работы верстку.
--->
-
 <body>
-    <header>
-        <img src="" alt="Иконка" />
-        <button>
-            <img src="" alt="" />
+    <header class = "header">
+        <img class = "header__logo" src="" alt="Иконка" />
+        <button class = "header__burger_menu">
+            <img class = "header__burger_menu-logo" src="" alt="" />
         </button>
     </header>
     <main>
-        <section>
-<<<<<<< HEAD
-            <div>
-                <h1>Экскурсии на квадроциклах в Геленджике</h1>
-                <p>приезжайте за новыми ощущениями и эмоциями!</p>
-                <a href="">
+        <section class = "maining">
+            <div class = "maining__information">
+                <h2 class= "maining__title">Экскурсии на квадроциклах в Геленджике</h2>
+                <p class = "maining__call">приезжайте за новыми ощущениями и эмоциями!</p>
+                <a class = "maining__selection" href="">
                     Подобрать маршрут
-                    <img src="" alt="" />
+                    <img src="" alt="" class="maining__selection-logo"/>
                 </a>
-=======
-            <h1>Экскурсии на квадроциклах в Геленджике</h1>
-            <!-- Это заголовок слайда, а не страницы -->
-            <p>приезжайте за новыми ощущениями и эмоциями!</p>
-            <a href="">
-                Подобрать маршрут
-                <img src="" alt="" />
-            </a>
-
-            <button>Слайд 1</button>
-            <button>Слайд 2</button>
-            <button>Слайд 3</button>
-            <!-- Собрать в див -->
-            <hr />
-            <!-- не пойдет, просто пока не размечай -->
-            <p>scroll</p>
-        </section>
-        <section>
-            <h2>Преимущества</h2>
-            <ul>
-                <li>
-                    <img src="" alt="" />
-                    <h3>Увлекательные экскурсии</h3>
-                    <p>Маршруты от лесных дорожек до полного бездорожья!</p>
-                </li>
-                <li>
-                    <img src="" alt="" />
-                    <h3>Надежная техника</h3>
-                    <p>18 квадроциклов всех японских брендов</p>
-                </li>
-                <li>
-                    <img src="" alt="" />
-                    <h3>Экипировка бесплатно</h3>
-                    <p>Необходимая экипировка выдается бесплатно</p>
-                </li>
-                <li>
-                    <img src="" alt="" />
-                    <h3>Опытные инструктора</h3>
-                    <p>Обеспечат полную безопасность Вашего отдыха</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Наши маршруты</h2>
-            <section>
-                <hr />
-                <!-- не стоит, просто убери -->
-                <h2>БАЗОВЫЙ</h2>
-                <h3>от 4000 ₽</h3>
-                <!-- не заголовок, а просто текст -->
-                <ul>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Время в пути: 1,5 - 2 часа</p>
-                        <!-- выделить жирный текст в спан -->
-                    </li>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Расстояние: 20 - 25 км</p>
-                        <!-- выделить жирный текст в спан -->
-                    </li>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Сложность: 5***</p>
-                        <!-- выделить жирный текст в спан -->
-                    </li>
-                </ul>
-                <h3>маршрут</h3>
-                <img src="" alt="" />
-                <p>
-                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                    --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-                    Форсаж
-                </p>
-                <button>Подробнее</button>
-                <button>Забронировать</button>
-                <ul>
-                    <li><img src="" alt="Машинка 1" /></li>
-                    <li><img src="" alt="Машинка 2" /></li>
-                    <li><img src="" alt="Машинка 3" /></li>
-                </ul>
-
->>>>>>> f4989203cf1c4ff09726075cee0644c19087b192
-                <button>Слайд 1</button>
-                <button>Слайд 2</button>
-                <button>Слайд 3</button>
-                <!-- собрать в общий див -->
-                <hr />
-                <!-- убрать -->
-                <p>scroll</p>
+                <div class="maining__slider">
+                    <button class="maining__slider-button">Слайд 1</button>
+                    <button class="maining__slider-button">Слайд 2</button>
+                    <button class="maining__slider-button">Слайд 3</button>
+                </div>
+                <p class="maining__scroll">scroll</p>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Преимущества</h2>
-                <ul>
-                    <li>
-                        <img src="" alt="" />
-                        <h3>Увлекательные экскурсии</h3>
-                        <p>Маршруты от лесных дорожек до полного бездорожья!</p>
+        <section class="advantages">
+            <div class="advantages_information">
+                <h2 class="advantages__title">Преимущества</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__list-item">
+                        <img src="" alt="" class="advantages__list-image"/>
+                        <h3 class="advantages__list-title">Увлекательные экскурсии</h3>
+                        <p class="advantages__list-description">Маршруты от лесных дорожек до полного бездорожья!</p>
                     </li>
-                    <li>
-                        <img src="" alt="" />
-                        <h3>Надежная техника</h3>
-                        <p>18 квадроциклов всех японских брендов</p>
+                    <li class="advantages__list-item">
+                        <img class="advantages__list-image" src="" alt="" />
+                        <h3 class="advantages__list-title">Надежная техника</h3>
+                        <p class="advantages__list-description">18 квадроциклов всех японских брендов</p>
                     </li>
-                    <li>
-                        <img src="" alt="" />
-                        <h3>Экипировка бесплатно</h3>
-                        <p>Необходимая экипировка выдается бесплатно</p>
+                    <li class="advantages__list-item">
+                        <img src="" alt="" class="advantages__list-image"/>
+                        <h3 class="advantages__list-title">Экипировка бесплатно</h3>
+                        <p class="advantages__list-description">Необходимая экипировка выдается бесплатно</p>
                     </li>
-                    <li>
-                        <img src="" alt="" />
-                        <h3>Опытные инструктора</h3>
-                        <p>Обеспечат полную безопасность Вашего отдыха</p>
+                    <li class="advantages__list-item">
+                        <img src="" alt="" class="advantages__list-image"/>
+                        <h3 class="advantages__list-title">Опытные инструктора</h3>
+                        <p class="advantages__list-description">Обеспечат полную безопасность Вашего отдыха</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Наши маршруты</h2>
-                <section>
-                    <hr />
-                    <h2>БАЗОВЫЙ</h2>
-                    <h3>от 4000 ₽</h3>
-                    <ul>
-                        <li>
-                            <img src="" alt="" />
-                            <p>Время в пути: 1,5 - 2 часа</p>
+        <section class="trials">
+            <h2 class="trials__title">Наши маршруты</h2>
+            <ul class="trials__list">
+                <li class="trials__list-item">
+                    <h3 class="trials__list-title">БАЗОВЫЙ</h3>
+                    <p class="trials__list-price">от 4000 ₽</p>
+                    <ul class="trials__list.list_of_desctiption">
+                        <li class="trials__list_of_desctiption-item">
+                            <img src="" alt="" class="trials__list_of_desctiption-image"/>
+                            <p class="trials__list_of_desctiption-special">Время в пути:<span>1,5 - 2 часа</span></p>
                         </li>
-                        <li>
-                            <img src="" alt="" />
-                            <p>Расстояние: 20 - 25 км</p>
+                        <li class="trials__list_of_desctiption-item">
+                            <img src="" alt="" class="trials__list_of_desctiption-image"/>
+                            <p class="trials__list_of_desctiption-special">Расстояние: <span>20 - 25 км</span></p>
                         </li>
-                        <li>
-                            <img src="" alt="" />
-                            <p>Сложность: 5***</p>
+                        <li class="trials__list_of_desctiption-item">
+                            <img src="" alt="" class="trials__list_of_desctiption-image"/>
+                            <p class="trials__list_of_desctiption-special">Сложность: <span>5***</span></p>
                         </li>
                     </ul>
-                    <h3>маршрут</h3>
-                    <img src="" alt="" />
-                    <p>
+                    <h4 class="trials__list-route-title">маршрут</h4>
+                    <img class="trials__list-image" src="" alt="" />
+                    <p class="trials__list-discription">
                         Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
                         --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
                         Форсаж
+                    </p>
+                    <button class="trials__list-button">Подробнее</button>
+                    <button class="trials__list-button-reservation">Забронировать</button>
+                    <ul class="trials__list.slider__car">
+                        <li class="slider__car-item"><img src="" alt="Машинка 1" class="slider__car-image" /></li>
+                        <li class="slider__car-item"><img src="" alt="Машинка 2" class="slider__car-image" /></li>
+                        <li class="slider__car-item"><img src="" alt="Машинка 3" class="slider__car-image" /></li>
+                    </ul>
+                    <div class="trials__list.slider__photo">
+                        <button class="slider__photo-button">Слайд 1</button>
+                        <button class="slider__photo-button">Слайд 2</button>
+                        <button class="slider__photo-button">Слайд 3</button>
+                    </div>
+                    <p class="trials__list-scroll">scroll</p>
+                </li>
+                <li class="trials__list-item">
+                    <h3 class="trials__list-title">РАСШИРЕННЫЙ</h3>
+                    <h4 class="trials__list-price">от 16000 ₽</h4>
+                    <ul class="trials__list.list_of_desctiption">
+                        <li class="trials__list_of_desctiption-item">
+                            <img src="" alt="" class="trials__list_of_desctiption-image"/>
+                            <p class="trials__list_of_desctiption-special">Время в пути: <span>6 - 8 часов</span></p>
+                        </li>
+                        <li class="trials__list_of_desctiption-item">
+                            <img src="" alt="" class="trials__list_of_desctiption-image"/>
+                            <p class="trials__list_of_desctiption-special">Расстояние: <span>60 - 70 км</span></p>
+                        </li>
+                        <li class="trials__list_of_desctiption-item">
+                            <img src="" alt="" class="trials__list_of_desctiption-image"/>
+                            <p class="trials__list_of_desctiption-special">Сложность: <span>5***</span></p>
+                        </li>
+                    </ul>
+                    <h4 class="trials__list-route-title">маршрут</h4>
+                    <img src="" alt="" class="trials__list-image"/>
+                    <p class="trials__list-discription">
+                        Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                        --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                        Форсаж
+                    </p>
+                    <button class="trials__list-button">Подробнее</button>
+                    <button class="trials__list-button-reservation">Забронировать</button>
+                    <ul class="trials__list.slider__car">
+                        <li class="slider__car-item"><img src="" alt="Машинка 1" class="slider__car-image"/></li>
+                        <li class="slider__car-item"><img src="" alt="Машинка 2" class="slider__car-image"/></li>
+                        <li class="slider__car-item"><img src="" alt="Машинка 3" class="slider__car-image"/></li>
+                    </ul>
+                    <div class="trials__list.slider__photo">
+                        <button class="slider__photo-button">Слайд 1</button>
+                        <button class="slider__photo-button">Слайд 2</button>
+                        <button class="slider__photo-button">Слайд 3</button>
+                    </div>
+                    <p class="trials__list-scroll">scroll</p>
+                </li>
+                <li class = "trials__list-item">
+                    <h3 class="trials__list-title">EXPERIENCE</h3>
+                    <h4 class="trials__list-price">от 7000 ₽</h4>
+                    <ul class="trials__list.t">
+                        <li>
+                            <img src="" alt="" />
+                            <p>Время в пути: <span>4 часа</span></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <p>Расстояние: <span>40 - 50 км</span></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <p>Сложность: <span>5***</span></p>
+                        </li>
+                    </ul>
+                    <h4>маршрут</h4>
+                    <img src="" alt="" />
+                    <p>
+                        Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж
                     </p>
                     <button>Подробнее</button>
                     <button>Забронировать</button>
@@ -187,212 +168,119 @@
                         <li><img src="" alt="Машинка 2" /></li>
                         <li><img src="" alt="Машинка 3" /></li>
                     </ul>
-                    <button>Слайд 1</button>
-                    <button>Слайд 2</button>
-                    <button>Слайд 3</button>
-                    <hr />
+                    <div>
+                        <button>Слайд 1</button>
+                        <button>Слайд 2</button>
+                        <button>Слайд 3</button>
+                    </div>
                     <p>scroll</p>
-            </div>
+                </li>
+            </ul>
         </section>
         <section>
-            <div>
-                <hr />
-                <h2>РАСШИРЕННЫЙ</h2>
-                <h3>от 16000 ₽</h3>
-                <ul>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Время в пути: 6 - 8 часов</p>
-                    </li>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Расстояние: 60 - 70 км</p>
-                    </li>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Сложность: 5***</p>
-                    </li>
-                </ul>
-                <h3>маршрут</h3>
-                <img src="" alt="" />
-                <p>
-                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                    --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-                    Форсаж
-                </p>
-                <button>Подробнее</button>
-                <button>Забронировать</button>
-                <ul>
-                    <li><img src="" alt="Машинка 1" /></li>
-                    <li><img src="" alt="Машинка 2" /></li>
-                    <li><img src="" alt="Машинка 3" /></li>
-                </ul>
-                <button>Слайд 1</button>
-                <button>Слайд 2</button>
-                <button>Слайд 3</button>
-                <hr />
-                <p>scroll</p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <hr />
-                <h2>EXPERIENCE</h2>
-                <h3>от 7000 ₽</h3>
-                <ul>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Время в пути: 4 часа</p>
-                    </li>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Расстояние: 40 - 50 км</p>
-                    </li>
-                    <li>
-                        <img src="" alt="" />
-                        <p>Сложность: 5***</p>
-                    </li>
-                </ul>
-                <h3>маршрут</h3>
-                <img src="" alt="" />
-                <p>
-                    Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж
-                </p>
-                <button>Подробнее</button>
-                <button>Забронировать</button>
-                <ul>
-                    <li><img src="" alt="Машинка 1" /></li>
-                    <li><img src="" alt="Машинка 2" /></li>
-                    <li><img src="" alt="Машинка 3" /></li>
-                </ul>
-                <button>Слайд 1</button>
-                <button>Слайд 2</button>
-                <button>Слайд 3</button>
-                <hr />
-                <p>scroll</p>
-<<<<<<< HEAD
-            </div>
-        </section>
-        </section>
-        <section>
-            <div>
+            <div class="wrapper">
                 <h2>Затрудняетесь выбрать маршрут?</h2>
                 <p>
                     Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию
                 </p>
                 <button>Начать тест</button>
             </div>
-=======
-            </section>
-            <!-- Вместо секций собрать в список, заголовки второго уровня увести на третий
-            третьего на четвертый, общий заголовок секции - trials. Также внутри каждого блока задать враппер -->
         </section>
         <section>
-            <!-- Враппер тут нужен -->
-            <h2>Затрудняетесь выбрать маршрут?</h2>
-            <p>
-                Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию
-            </p>
-            <button>Начать тест</button>
->>>>>>> f4989203cf1c4ff09726075cee0644c19087b192
-        </section>
-        <section>
-            <!-- Враппер -->
-            <h2>Наша команда</h2>
-            <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <h3>Юлиана</h3>
-                <p>руководитель</p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <h3>Максим</h3>
-                <p>старший инструктор</p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <h3>Кристина</h3>
-                <p>администратор</p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <h3>Юрий</h3>
-                <p>старший механик</p>
+            <div class="wrapper">
+                <h2>Наша команда</h2>
+                <div>
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <h3>Юлиана</h3>
+                    <p>руководитель</p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <h3>Максим</h3>
+                    <p>старший инструктор</p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <h3>Кристина</h3>
+                    <p>администратор</p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <h3>Юрий</h3>
+                    <p>старший механик</p>
+                </div>
             </div>
         </section>
         <section>
-            <!-- враппер -->
-            <h2>Условия предоставления услуг</h2>
-            <div></div>
-            <img src="" alt="" />
-            <p>
-                При прокате или аренде строго соблюдать правила техники
-                безопасности и все требования инструктора!
-            </p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <p>
-                    К управлению НЕ ДОПУСКАЮТСЯ лица младше 16 лет и лица в
-                    алкогольном опьянении!
-                </p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <p>
-                    Распивать спиртные напитки во время проката, аренды ЗАПРЕЩЕНО!
-                    (После? На ваше усмотрение)
-                </p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <p>
-                    Управление осуществляйте в меру своих сил и возможностей. Не
-                    переоценивайте себя! Это опасно!!!
-                </p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <p>
-                    Перед каждым катанием опытный инструктор научит Вас основам
-                    управления и будет сопровождать на протяжении всего маршрута.При
-                    прокате или аренде строго соблюдать правила техники безопасности и
-                    все требования инструктора!
-                </p>
-            </div>
-            <div>
-                <img src="" alt="" />
-                <p>
-                    При прокате или аренде строго соблюдать правила техники
-                    безопасности и все требования инструктора!
-                </p>
+            <div class="wrapper">
+                <h2>Условия предоставления услуг</h2>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        При прокате или аренде строго соблюдать правила техники
+                        безопасности и все требования инструктора!
+                    </p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        К управлению НЕ ДОПУСКАЮТСЯ лица младше 16 лет и лица в
+                        алкогольном опьянении!
+                    </p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        Распивать спиртные напитки во время проката, аренды ЗАПРЕЩЕНО!
+                        (После? На ваше усмотрение)
+                    </p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        Управление осуществляйте в меру своих сил и возможностей. Не
+                        переоценивайте себя! Это опасно!!!
+                    </p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        Перед каждым катанием опытный инструктор научит Вас основам
+                        управления и будет сопровождать на протяжении всего маршрута.При
+                        прокате или аренде строго соблюдать правила техники безопасности и
+                        все требования инструктора!
+                    </p>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <p>
+                        При прокате или аренде строго соблюдать правила техники
+                        безопасности и все требования инструктора!
+                    </p>
+                </div>
             </div>
         </section>
         <section>
-            <!-- враппер -->
-            <h2>Спецпредложения</h2>
-<<<<<<< HEAD
-            <div>
-                <section>
-                    <img src="" alt="" />
-                    <h3>Скидка 10%</h3>
-                    <h4>на День Рождение</h4>
-                    <p>в честь Дня Рождения - дарим имениннику скидку 10%</p>
-                    <img src="" alt="" />
-                </section>
-            </div>
-            <div>
-                <section>
-                    <img src="" alt="" />
-                    <h3>Скидка 10%</h3>
-                    <p>клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
-                    <img src="" alt="" />
-                    <button>Подробнее</button>
-                </section>
+            <div class="wrapper">
+                <h2>Спецпредложения</h2>
+                <ul>
+                    <li>img src="" alt="" />
+                        <h3>Скидка 10%</h3>
+                        <h4>на День Рождение</h4>
+                        <p>в честь Дня Рождения - дарим имениннику скидку 10%</p>
+                        <img src="" alt="" />
+                    </li>
+                    <li> <img src="" alt="" />
+                        <h3>Скидка 10%</h3>
+                        <p>клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
+                        <img src="" alt="" />
+                        <a href="">Подробнее</a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section>
@@ -410,7 +298,7 @@
                     к новому увлечению.
                 </p>
                 <button>Подберем сертификат для вас</button>
-                </ </section>
+        </section>
                 <section>
                     <div>
                         <h2>Вопросы-ответы</h2>
@@ -452,8 +340,6 @@
                                 </details>
                             </li>
                         </ul>
-
-
                     </div>
                     <div>
                         <img src="" alt="" />
@@ -462,140 +348,14 @@
                             Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы,
                             предложения или идеи для сотрудничества
                         </p>
-                        <button>Задать вопрос</button>
-                        <hr />
+                        <a href="">Задать вопрос</a>
                     </div>
                 </section>
-=======
-            <section>
-                <!-- просто список -->
-                <img src="" alt="" />
-                <h3>Скидка 10%</h3>
-                <h4>на День Рождение</h4>
-                <p>в честь Дня Рождения - дарим имениннику скидку 10%</p>
-                <img src="" alt="" />
-            </section>
-            <section>
-                <img src="" alt="" />
-                <h3>Скидка 10%</h3>
-                <p>клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
-                <img src="" alt="" />
-                <button>Подробнее</button>
-            </section>
-        </section>
-        <section>
-            <!-- враппер -->
-            <h2>Подарочный сертификат</h2>
-            <p>
-                Хотите сделать оригинальный подарок? Подарите незабываемые эмоции -
-                лучший подарок!
-            </p>
-            <img src="" alt="" />
-            <!-- нет, тут делаем через html - выйдет дешевле -->
-            <p>
-                Хотите удивить своих близких оригинальным подарком? Подарочный
-                сертификат на экскурсию на квадроциклах станет не просто интересным
-                подарком, но и реальной возможностью приблизить Ваших друзей и близких
-                к новому увлечению.
-            </p>
-            <button>Подробнее</button>
-            <!-- лучше ссылка -->
-        </section>
-        <section>
-            <h2>Вопросы-ответы</h2>
-            <ul>
-                <li>
-                    <h3>Актуальный вопрос?</h3>
-                    <button></button>
-                    <!-- нет, тут лучшее убрать эту кнопку. H3 замени на кнопку, добавь потом H3 с заголовком -->
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
-                    </p>
-                </li>
-                <li>
-                    <h3>Актуальный вопрос?</h3>
-                    <button></button>
-                    <!-- нет, тут лучшее убрать эту кнопку. H3 замени на кнопку, добавь потом H3 с заголовком -->
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
-                    </p>
-                </li>
-                <li>
-                    <h3>Актуальный вопрос?</h3>
-                    <button></button>
-                    <!-- нет, тут лучшее убрать эту кнопку. H3 замени на кнопку, добавь потом H3 с заголовком -->
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
-                    </p>
-                </li>
-                <li>
-                    <h3>Актуальный вопрос?</h3>
-                    <button></button>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen book.
-                    </p>
-                </li>
-            </ul>
-
-            <img src="" alt="" />
-            <h2>Есть вопросы?</h2>
-            <p>
-                Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы,
-                предложения или идеи для сотрудничества
-            </p>
-            <button>Задать вопрос</button>
-            <hr />
-            <!-- В отдельный див, с h2 согласен, кнопку в ссылку -->
-        </section>
-        <section>
-            <h2>Контакты</h2>
-            <img src="" alt="карта" />
-            <ol>
-                <!-- Не требуется, порядок не важен -->
-                <li>
-                    <img src="" alt="домик" />
-                    <p>Город Геленджик</p>
-                </li>
-                <li>
-                    <img src="" alt="почта" />
-                    <p>experience@groupgrand.ru</p>
-                </li>
-                <li>
-                    <img src="" alt="телефон" />
-                    <p>+7 928 428-00-62</p>
-                </li>
-                <li>
-                    <img src="" alt="часы" />
-                    <p>Пн - Пт: 9:00 - 18:00 Сб: 9:00 - 17:00 Вс - выходной</p>
-                </li>
-            </ol>
-            <h3>Написать нам:</h3>
-            <a href="">
-                <img src="" alt="ватсап" />
-            </a>
-            <a href="">
-                <img src="" alt="инста" />
-            </a>
-            <!-- ненумерованный список -->
-        </section>
->>>>>>> f4989203cf1c4ff09726075cee0644c19087b192
     </main>
     <footer>
         <h2>Контакты</h2>
         <img src="" alt="карта" />
-        <ol>
+        <ul>
             <li>
                 <img src="" alt="домик" />
                 <p>Город Геленджик</p>
@@ -612,35 +372,33 @@
                 <img src="" alt="часы" />
                 <p>Пн - Пт: 9:00 - 18:00 Сб: 9:00 - 17:00 Вс - выходной</p>
             </li>
-        </ol>
-        <h3>Написать нам:</h3>
-        <a href="">
-            <img src="" alt="ватсап" />
-        </a>
-        <a href="">
-            <img src="" alt="инста" />
-        </a>
-        <hr />
-        <!-- Убрать -->
-        <a href="">
-            <img src="" alt="Иконка" />
-        </a>
-        <ul>
-            <li><a href="">Маршруты</a></li>
-            <li><a href="">Галерея</a></li>
-            <li><a href="">Вопрос-ответ</a></li>
-            <li><a href="">Контакты</a></li>
-            <li><a href="">Условия</a></li>
-            <li><a href="">Спецпредложения</a></li>
         </ul>
-        <!-- можно в nav -->
-        <hr />
-        <!-- убрать -->
+        <h3>Написать нам:</h3>
+        <ul>
+            <li><a href="">
+                    <img src="" alt="ватсап" />
+                </a></li>
+            <li><a href="">
+                    <img src="" alt="инста" />
+                </a></li>
+            <li><a href="">
+                    <img src="" alt="Иконка" />
+                </a></li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="">Маршруты</a></li>
+                <li><a href="">Галерея</a></li>
+                <li><a href="">Вопрос-ответ</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Условия</a></li>
+                <li><a href="">Спецпредложения</a></li>
+            </ul>
+        </nav>
         <p>
             © CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат
             квадроциклов в Геленджике
         </p>
     </footer>
 </body>
-
 </html>
