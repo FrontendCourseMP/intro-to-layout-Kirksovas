@@ -51,6 +51,8 @@
 :root {
     --back-color--part1: white;
     --back-color--part2: #F4F4F4;
+    --back-color--part3: black;
+    --back-color--part4: #037E8C;
     font-size: 62.5%;
 }
 
@@ -61,4 +63,131 @@ body {
 
 ul {
   list-style: none;
+}
+
+.header {
+  background-color: var(--back-color--part3);
+}
+
+.maining_span {
+  font-style: bold;
+}
+
+.maining {
+  background-color: var(--back-color--part2);
+  color: var(--back-color--part1)
+}
+.advantages {
+  background-color: var(--back-color--part1);
+}
+.trials {
+  background-color: var(--back-color--part2);
+}
+
+.trials__list-button {
+  color:var(--back-color--part1);
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid #037E8C;
+}
+
+.trials__list-button-reservation {
+  color:var(--back-color--part1);
+  background-color: var(--back-color--part4);
+  border-radius: 12px;
+  border: 1px;
+}
+
+.slider__car-image {
+  border-radius: 20px;
+}
+
+.help {
+  background-color: var(--back-color--part3);
+  color: var(--back-color--part1);
+}
+
+.help__button {
+  color:var(--back-color--part1);
+  background-color: var(--back-color--part4);
+  border-radius: 12px;
+  border: 1px;
+}
+
+.team {
+  background-color: var(--back-color--part1);
+}
+
+.person__name {
+  color:var(--back-color--part4);
+}
+
+.person__background {
+  background-color: var(--back-color--part2);
+  border-radius: 9px;
+}
+
+.conditions {
+  background-color: var(--back-color--part2);
+
+}
+
+.conditions__detail {
+  background-color: var(--back-color--part1);
+  border-radius: 9px;
+}
+
+.detail__span {
+  font-weight: bold;
+}
+
+.span {
+  font-weight: bold;
+}
+
+.offers-list__item{
+  border-radius: 9px;
+  background-color: var(--back-color--part2);
+  width: 400px;
+  height: 4cqh;
+}
+.offers-list__span {
+  color: var(--back-color--part4);
+  font-weight: bold;
+}
+
+.certificate {
+  background-color: var(--back-color--part2);
+}
+
+.present__subtitle {
+  color: var(--back-color--part4)
+}
+
+.present__button {
+  color:var(--back-color--part1);
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid #037E8C;
+}
+
+.form-answer__button {
+  background-color: transparent;
+  border: 1px solid #037E8C;
+}
+
+.questioner__button {
+  color:var(--back-color--part1);
+  background-color: var(--back-color--part4);
+  border-radius: 12px;
+  border: 1px;
+}
+
+.navigation__list__span {
+  font-weight: bold;
+}
+
+.footer__copyright {
+  color: #787878;
+  font-size: small;
 }
