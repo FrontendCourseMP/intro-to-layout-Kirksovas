@@ -87,14 +87,14 @@ ul {
 .trials__list-button {
   color:var(--back-color--part1);
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 9px;
   border: 1px solid #037E8C;
 }
 
 .trials__list-button-reservation {
   color:var(--back-color--part1);
   background-color: var(--back-color--part4);
-  border-radius: 12px;
+  border-radius: 9px;
   border: 1px;
 }
 
@@ -110,7 +110,7 @@ ul {
 .help__button {
   color:var(--back-color--part1);
   background-color: var(--back-color--part4);
-  border-radius: 12px;
+  border-radius: 9px;
   border: 1px;
 }
 
@@ -148,8 +148,8 @@ ul {
 .offers-list__item{
   border-radius: 9px;
   background-color: var(--back-color--part2);
-  width: 400px;
-  height: 4cqh;
+  width: 250px;
+  height: 250px;
 }
 .offers-list__span {
   color: var(--back-color--part4);
@@ -167,7 +167,7 @@ ul {
 .present__button {
   color:var(--back-color--part1);
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 9px;
   border: 1px solid #037E8C;
 }
 
@@ -179,7 +179,7 @@ ul {
 .questioner__button {
   color:var(--back-color--part1);
   background-color: var(--back-color--part4);
-  border-radius: 12px;
+  border-radius: 9px;
   border: 1px;
 }
 
@@ -189,5 +189,5 @@ ul {
 
 .footer__copyright {
   color: #787878;
-  font-size: small;
+  font-size: 10px;
 }
