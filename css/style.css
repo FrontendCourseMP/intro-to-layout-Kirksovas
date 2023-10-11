@@ -64,7 +64,9 @@ body {
 ul {
   list-style: none;
 }
-
+.span {
+  font-weight: bold;
+}
 .header {
   background-color: var(--back-color--part3);
 }
@@ -78,12 +80,29 @@ ul {
   color: var(--back-color--part1);
 }
 
-.link {
+.maining__title {
+  font-size: 36px;
+}
+.maining__subtitle {
+  font-size: 16px;
+}
+.link, link:visited {
   display: inline-block;
   text-decoration: none;
   color: var(--back-color--part1);
   background-color: var(--back-color--part4);
   border-radius: 9px;
+  font-size: 14px;
+}
+.slider__scroll {
+  font-size: 18px;
+}
+
+.advantages__title {
+  font-size: 16px;
+}
+.advantages__list-description {
+  font-size: 14px;
 }
 .advantages {
   background-color: var(--back-color--part1);
@@ -91,15 +110,39 @@ ul {
 .trials {
   background-color: var(--back-color--part2);
 }
-
-.trials__list-button {
+.trials__list-title {
+  font-size: 24px;
+}
+.trials__list-price {
+  font-size: 18px;
+}
+.trials__list-title-route {
+  font-size: 19px;
+}
+.list-of-description__image {
+  color: var(--back-color--part4);
+}
+.trials__list-discription {
+  font-size: 14px;
+}
+.trials__span {
+  font-weight: bold;
+}
+.list-of-description__special {
+  font-size: 14px;
+}
+.trials__list-link,  trials__list-link:visited{
+  display: inline;
+  text-decoration: none;
   color:var(--back-color--part4);
   background-color: transparent;
   border-radius: 9px;
   border: 1px solid #037E8C;
 }
 
-.trials__list-button-reservation {
+.trials__list-link-reservation, .trials__list-link-reservation:visited {
+  display: inline-block;
+  text-decoration: none;
   color:var(--back-color--part1);
   background-color: var(--back-color--part4);
   border-radius: 9px;
@@ -115,8 +158,10 @@ ul {
   color: var(--back-color--part1);
 }
 
-.help__button {
-  color:var(--back-color--part4);
+.help__link, help__link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color:var(--back-color--part1);
   background-color: var(--back-color--part4);
   border-radius: 9px;
   border: 1px;
@@ -149,21 +194,26 @@ ul {
   font-weight: bold;
 }
 
-.span {
-  font-weight: bold;
-}
+
 
 .offers-list__item{
   border-radius: 9px;
   background-color: var(--back-color--part2);
   width: 300px;
-  height: 300px;
+  height: 250px;
+  margin: 2px;
 }
 .offers-list__span {
   color: var(--back-color--part4);
   font-weight: bold;
 }
-
+.offers-list__link, offers-list__link:visited{
+  text-decoration: none;
+  color:var(--back-color--part4);
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid #037E8C;
+}
 .certificate {
   background-color: var(--back-color--part2);
 }
@@ -172,7 +222,9 @@ ul {
   color: var(--back-color--part4)
 }
 
-.present__button {
+.present__link, present__link:visited {
+  display: inline-block;
+  text-decoration: none;
   color:var(--back-color--part4);
   background-color: transparent;
   border-radius: 9px;
@@ -184,18 +236,37 @@ ul {
   border: 1px solid #037E8C;
 }
 
-.questioner__button {
+.questioner__link, .questioner__link:visited {
+  display: inline-block;
+  text-decoration: none;
   color:var(--back-color--part1);
   background-color: var(--back-color--part4);
   border-radius: 9px;
   border: 1px;
 }
 
-.navigation__list__span {
+.navigation__span {
   font-weight: bold;
 }
 
 .footer__copyright {
   color: #787878;
   font-size: 10px;
+}
+.footer__list-image {
+  display: inline-block;
+}
+.social-network__link-whatsapp, social-network__link-whatsapp:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--back-color--part3);
+  border-radius: 100px;
+  color:var(--back-color--part1)
+}
+.social-network__link-instagramm, social-network__link-instagramm:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--back-color--part3);
+  border-radius: 100px;
+  color:var(--back-color--part1);
 }
