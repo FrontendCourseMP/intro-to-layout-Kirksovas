@@ -80,7 +80,7 @@ ul {
   margin: 10px 0 0 20px;
 }
 .header__burger-menu {
-    margin: -10px 0px 0px 250px;
+    margin: -10px 0px 0px 75%;
     display: inline-block;
     position: relative;
     bottom: 20px;
@@ -606,9 +606,26 @@ ul {
   line-height: 28.08px;
   word-wrap: break-word
 }
-
-.help__list-item {
-  border: 0.5px solid #037E8C;
+.helper__list .help__list-item:nth-child(2) {
+  border: 0.5px solid #666c6d;
+  border-radius: 5px;
+  margin: 2% auto;
+  height: 60px;
+}
+.helper__list .help__list-item:nth-child(3) {
+  border: 0.5px solid #666c6d;
+  border-radius: 5px;
+  margin: 2% auto;
+  height: 60px;
+}
+.helper__list .help__list-item:nth-child(4) {
+  border: 0.5px solid #666c6d;
+  border-radius: 5px;
+  margin: 2% auto;
+  height: 60px;
+}
+.help__list-item{
+  border: 0.5px solid var(--back-color--part4);
   border-radius: 5px;
   margin: 2% auto;
 }
@@ -633,7 +650,8 @@ ul {
 }
 
 .form-answer__title{
-  display: block;
+  display: inline-block;
+  width: 30%;
   font-size: 16px;
   font-family: Montserrat;
   font-weight: 600;
@@ -643,14 +661,12 @@ ul {
 .form-answer__button {
   background-color: transparent;
   border: 0;
-  display: block;
-  position: sticky;
-  margin: 0 50px 0 150px;
+  display: inline-block;
+  position: absolute;
+  margin: 17px 0 0 50%;
 }
 .answer__button-image {
   display: block;
-  margin-left: 70px;
-
 }
 .questioner {
   margin: 20px 20px 10px 20px;
@@ -678,14 +694,17 @@ ul {
   word-wrap: break-word
 }
 .questioner__link, .questioner__link:visited {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color:var(--back-color--part1);
   background-color: var(--back-color--part4);
   border-radius: 5px;
-  margin: 0 25% 0 25%;
+  margin: 0 auto;
+  min-height: 20%;
+  max-width: 35%;
+  position: static;
   border: 1px;
-  padding: 5px 50px;
+  padding: 10px 40px;
   font-size: 14px;
   font-family: Montserrat;
   font-weight: 600;
@@ -721,11 +740,15 @@ ul {
 .footer__list{
   padding: 0 20px;
 }
-
+.footer__list .footer__list-image:nth-child(5) {
+  display: inline-block;
+  margin: 20px 10px 50px 0 ;
+}
 .footer__list-image {
   display: inline-block;
   margin: 20px 10px 0 0 ;
 }
+
 .footer__list-title {
   display: inline-block;
   margin: 0px 10px 15px 10px;
@@ -789,11 +812,17 @@ ul {
 }
 .footer__logo {
   display: inline-block;
+  width: 10%;
+  height: 10%;
+  margin: 0 0 10% 0;
 }
 .navigation__list {
   display: inline-block;
+  padding: 0;
+  margin: 0 0 0 30%;
 }
-.navigation__list-link,  navigation__list-link:visited{
+.navigation__list-link,  navigation__list-link:visited {
+  color: var(--back-color--part3);
   text-decoration: none;
   font-size: 14px;
   font-family: Montserrat;
