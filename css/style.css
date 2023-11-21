@@ -683,7 +683,7 @@ ul {
   word-wrap: break-word
 }
 .questioner__image {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
 }
 .questioner__description {
@@ -741,12 +741,12 @@ ul {
 .footer__list{
   padding: 0 20px;
 }
-.footer__list .footer__list-image:nth-child(5) {
+.footer__list .footer__list-image:nth-child(3) {
   display: inline-block;
-  margin: 20px 10px 50px 0 ;
+  margin: 20px 50px 50px 0 ;
 }
 .footer__list-image {
-  display: block;
+  display: inline-block;
   margin: 20px 10px 0 0 ;
 }
 
