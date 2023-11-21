@@ -683,7 +683,7 @@ ul {
   word-wrap: break-word
 }
 .questioner__image {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 .questioner__description {
@@ -703,6 +703,7 @@ ul {
   min-height: 20%;
   max-width: 35%;
   position: static;
+  text-align: center;
   border: 1px;
   padding: 10px 40px;
   font-size: 14px;
@@ -745,7 +746,7 @@ ul {
   margin: 20px 10px 50px 0 ;
 }
 .footer__list-image {
-  display: inline-block;
+  display: block;
   margin: 20px 10px 0 0 ;
 }
 
