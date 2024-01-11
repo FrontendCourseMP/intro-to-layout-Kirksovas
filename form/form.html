@@ -19,49 +19,72 @@
         </div>
     </header>
     <main>
-        <form action="//httpbin.org/post" method="POST">
-            <div class="form-group">
-                <h2>Личная информация</h2>
-                <label for="name" class="required">Имя:</label>
-                <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+        <div class="content__wrapper content">
+        <form action="//httpbin.org/post" method="POST" class="content__form">
+            <h1 class="content__title">Форма регистрации</h1>
+            <div class="personal__content">
+                <fieldset class="fieldset__pesonal">
+                        <legend class="legend__personal">Личная информация</legend>
+                        <label for="name" class="fio__label required">
+                            <input type="text" id="name" name="name" placeholder="Иван Иванов Иванович" required>
+                            <span class="fio__title" for="name"> ФИО:</span>
+                        </label>
+                        <label for="birthdate" class="date__born required">
+                            <input type="date" id="birthdate" name="birthdate" required>
+                            <span class="date__born" for="birthdate">Дата рождения:</span>
+                        </label>
+                </fieldset>
     
-                <label for="birthdate" class="required">Дата рождения:</label>
-                <input type="date" id="birthdate" name="birthdate" required>
-    
-                <div class="gender-label">
-                    <label class="required">Пол:</label>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Мужской</label>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Женский</label>
+                <div class="gender__content">
+                    <fieldset class="fieldset__gender">
+                        <legend class="legend__gender">Пол:</legend>
+                        <div class="gender__wrapper">
+                            <label class="gender__title" for="male">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <span class="male_title" for="male">Мужской</span>
+                            </label>
+                            <label class="gender__title" for="female">
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <span class="female__titlw" for="female">Женский</span>
+                            </label>
+                        </div>
+                    </fieldset>           
                 </div>
             </div>
     
-            <div class="form-group">
-                <h2>Контактные данные</h2>
-                <label for="password" class="required">Пароль:</label>
-                <input type="password" id="password" name="password" placeholder="Пароль" required>
-    
-                <label for="email" class="required">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
-    
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
-    
-                <label for="contact-time">Удобное время для связи:</label>
-                <select id="contact-time" name="contact-time">
-                    <option value="morning">Утро</option>
-                    <option value="day">День</option>
-                    <option value="evening">Вечер</option>
-                    <option value="night">Ночь</option>
-                </select>
+            <div class="contact__content">
+                <fieldset class="fieldset__contact">
+                    <legend class="legend__contact">Контактные данные</legend>
+                    <label for="password" class="password__label required">
+                        <input type="password" id="password" name="password" placeholder="Пароль" required>
+                        <span class="password__title" for="password">Пароль:</span>
+                    </label>
+                    <label for="email" class="email__label">
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                        <span class="password__title" for="email">Email:</span>
+                    </label>
+                    <label class="phone__label required" for="phone">
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                        <span class="phone__title" for="phone">Телефон:</span>
+                    </label>
+                    <label class="connection__label required" for="contact-time">
+                        <span class="contact-time__title" for="contact-time">Удобное время для связи:</span>
+                        <select id="contact-time" name="contact-time">
+                            <option value="morning">Утро</option>
+                            <option value="day">День</option>
+                            <option value="evening">Вечер</option>
+                            <option value="night">Ночь</option>
+                        </select>
+                    </label>
+                </fieldset>                
             </div>
     
-            <div class="form-group">
+            <div class="contact__content">
                 <input type="submit" value="Отправить">
                 <input type="reset" value="Сбросить">
             </div>
         </form>
+    </div>
     </main>
     <footer class="footer" id="contacts">
         <h2 class="footer__title">Контакты</h2>

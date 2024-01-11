@@ -136,10 +136,16 @@ header {
   }
 }
 .maining__title {
+  color:var(--highlighted-text);
   font-size: 3.6rem;
+  font-family: Montserrat;
+  font-weight: 700;
   margin: 84px 33px 0;
 }
 .maining__subtitle {
+  color: var(--highlighted-text);
+  font-family: Montserrat;
+  font-weight: 700;
   font-size: 1.6rem;
 }
 .maining__subtitle {

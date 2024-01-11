@@ -58,20 +58,13 @@
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif, FuturaPT;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
 }
 
 main {
@@ -81,20 +74,14 @@ main {
   align-items: center;
 }
 
-form {
+.content__form{
   background-color: #fff;
-  padding: 150px 0 0 0;
+  padding: 0 0;
   border-radius: 8px;
   width: 800px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+  margin-top: 150px;
 }
 
 label {
@@ -104,7 +91,9 @@ label {
   padding: 0 0 0 20px;
 
 }
-
+legend {
+  text-align: left;
+}
 input, select {
   width: 80%;
   padding: 10px;
@@ -113,42 +102,109 @@ input, select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-.form-group {
+.content {
+  margin: 0 auto;
+}
+.content__title {
+  padding-top: 50px;
+  justify-content: center;
+  color: var(--attention-text);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.fieldset__gender {
+  border: 2px solid transparent;
+  border-radius: 9px; 
+  padding: 15px; 
   margin-bottom: 20px;
 }
-
-.form-group label.required:after {
+.legend__gender {
+  color: var(--attention-text);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.fieldset__pesonal {
+  border: 2px solid  transparent;
+  border-radius: 9px; 
+  padding: 15px; 
+  margin-bottom: 20px;
+}
+.legend__personal {
+  color: var(--attention-text);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.fieldset__contact {
+  border: 2px solid  transparent;
+  border-radius: 9px; 
+  padding: 15px; 
+  margin-bottom: 20px;
+}
+.legend__contact {
+  color: var(--attention-text);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.gender__wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.contact__content {
+  margin-bottom: 20px;
+}
+.personal__content {
+  margin-bottom: 20px;
+}
+.personal__content label.required:after {
   content: " *";
   color: red;
 }
-
-.form-group::after {
+.contact__content label.required:after {
+  content: " *";
+  color: red;
+}
+.personal__content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact__content::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.form-group input[type="submit"], .form-group input[type="reset"] {
+.contact__content input[type="submit"], .form-group input[type="reset"] {
   background-color: #4caf50;
-  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  justify-content: center;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
-.form-group input[type="reset"] {
+.contact__content input[type="reset"] {
   background-color: #f44336;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
-.gender-label {
+.gender__content {
   display: flex;
   align-items: center;
 }
 
-.gender-label input {
+.gender__content input {
   margin-left: 1px;
 }
 
