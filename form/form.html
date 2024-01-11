@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="css_grid/style_grid.css">
-    <title>Кирксова задание с гридом</title>
+    <link rel="stylesheet" href="/form/css_form/style_form.css">
+    <title>Кирксова задание с формой</title>
 </head>
-
 <body>
     <header class="header">
         <div class="header__wrapper">
@@ -20,86 +19,49 @@
         </div>
     </header>
     <main>
-        <section class="container">
-            <div class="picter__wrapper picter">
-                <div class="picter__child-1"></div>
-                <div class="picter__child-2"></div>
-                <div class="picter__child-3"></div>
-                <div class="picter__child-4"></div>
-                <div class="picter__child-5"></div>
-                <div class="picter__child-6"></div>
-                <div class="picter__child-7"></div>
-                <div class="picter__child-8"></div>
-                <div class="picter__child-9"></div>
-                <div class="picter__child-10"></div>
-                <div class="picter__child-11"></div>
-                <div class="picter__child-12"></div>
-                <div class="picter__child-13"></div>
-                <div class="picter__child-14"></div>
-                <div class="picter__child-15"></div>
+        <form action="//httpbin.org/post" method="POST">
+            <div class="form-group">
+                <h2>Личная информация</h2>
+                <label for="name" class="required">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+    
+                <label for="birthdate" class="required">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+    
+                <div class="gender-label">
+                    <label class="required">Пол:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Мужской</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Женский</label>
+                </div>
             </div>
-            <section class="container__child-dashboard dashboard">
-                <div class="dashboard-menu">
-                    <a href="" class="dashboard-link">График1</a>
-                    <a href="" class="dashboard-link">График2</a>
-                    <a href="" class="dashboard-link">График3</a>
-                    <a href="" class="dashboard-link">График4</a>
-                    <a href="" class="dashboard-link">График5</a>
-                    <a href="" class="dashboard-link">График6</a>
-                </div>
-                <div class="dashboard-mainer mainer">
-                    
-                        <div class="mainer__container-block1">
-                            <img src="/grid/img_grid/grafic1.png" alt="график1" class="mainer__container-img1">
-                        </div>
-                        <div class="mainer__container-block2">
-                            <img src="/grid/img_grid/grafic2.png" alt="график2" class="mainer__container-img2">
-                        </div>
-                        <div class="mainer__container-block3">
-                            <img src="/grid/img_grid/grafic3.png" alt="график3" class="mainer__container-img3">
-                        </div>
-                        <div class="mainer__container-block4">
-                            <img src="/grid/img_grid/grafic4.png" alt="график4" class="mainer__container-img4">
-                        </div>
-                        <div class="mainer__container-block5">
-                            <img src="/grid/img_grid/grafic5.png" alt="график5" class="mainer__container-img5">
-                        </div>
-                        <div class="mainer__container-block6">
-                            <img src="/grid/img_grid/grafic6.png" alt="график6" class="mainer__container-img6">
-                        </div>
-                    
-                </div>
-            </section>
-            <section class="container__child-gallery gallery">
-                <div class="gallery__content-wrapery wrapery">
-                    <div class="gallery-item">
-                        <img class="gallery-img ram-image" src="/grid/img_grid/барс.jpg" alt="барс">
-                        <a href="#" class="gallery-link">Подробнее</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img class="gallery-img ram-image" src="/grid/img_grid/башня.jpeg" alt="башня">
-                        <a href="#" class="gallery-link">Подробнее</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img class="gallery-img ram-image" src="/grid/img_grid/берег.jpg" alt="берег">
-                        <a href="#" class="gallery-link">Подробнее</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img class="gallery-img ram-image" src="/grid/img_grid/водопад.jpg" alt="водопад">
-                        <a href="#" class="gallery-link">Подробнее</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img class="gallery-img ram-image" src="/grid/img_grid/кошка.jpeg" alt="кошка">
-                        <a href="#" class="gallery-link">Подробнее</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img class="gallery-img ram-image" src="/grid/img_grid/лев.jpg" alt="лев">
-                        <a href="#" class="gallery-link">Подробнее</a>
-                    </div>
-                </div>
-            </section>
-
-        </section>
+    
+            <div class="form-group">
+                <h2>Контактные данные</h2>
+                <label for="password" class="required">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Пароль" required>
+    
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+    
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+    
+                <label for="contact-time">Удобное время для связи:</label>
+                <select id="contact-time" name="contact-time">
+                    <option value="morning">Утро</option>
+                    <option value="day">День</option>
+                    <option value="evening">Вечер</option>
+                    <option value="night">Ночь</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Сбросить">
+            </div>
+        </form>
     </main>
     <footer class="footer" id="contacts">
         <h2 class="footer__title">Контакты</h2>
