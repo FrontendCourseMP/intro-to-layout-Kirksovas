@@ -13,6 +13,30 @@
     <header class="header">
         <div class="header__wrapper">
             <img class="header__logo" src="/image/logoser.svg" alt="Иконка">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="">Маршруты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="">Галерея </a>
+                </li>
+                <li class="header__menu-item"> 
+                    <a class="header__menu-link" href="">Вопрос-ответ</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link"  href="">Контакты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link __activeted" href="">Забронировать</a>
+                </li>
+            </ul>
+            <div class="header__phone">
+                <a href="" class="phone__number">
+                    <img class="phone__img" src="/image/header__phone.svg" alt="телефон">
+                    +7 928 333 26 45
+                </a>
+                <a href="" class="phone__link">Перезвоните мне</a>
+            </div>
             <button class="header__burger-menu">
                 <img class="header__burger-image" src="/image/burgermenu.svg" alt="бургер-меню">
             </button>
@@ -76,6 +100,7 @@
                 <h2 class="trials__title">Наши маршруты</h2>
                 <ul class="trials__list">
                     <li class="trials__list-item1">
+                        <div class="trials__infos">
                         <h3 class="trials__list-title">БАЗОВЫЙ</h3>
                         <p class="trials__list-price"><span class="trials__span"> от 4000 ₽ </span></p>
                         <ul class="trials__list list-description">
@@ -108,7 +133,7 @@
                             <a class="path__link" href="">Подробнее</a>
                             <a class="path__link-reservation" href="">Забронировать</a>
                         </div>
-
+                        </div>
                         <ul class="trials__list slider__car">
                             <li class="slider__car-item">
                                 <img src="/image/sec_three_slide1.jpg" alt="Машина 1"
@@ -138,6 +163,7 @@
 
                     </li>
                     <li class="trials__list-item2">
+                        <div class="trials__infos">
                         <h3 class="trials__list-title">РАСШИРЕННЫЙ</h3>
                         <p class="trials__list-price"><span class="trials__span">от 16000 ₽</span></p>
                         <ul class="trials__list list-description">
@@ -169,6 +195,7 @@
                             <a class="path__link" href="">Подробнее</a>
                             <a class="path__link-reservation" href="">Забронировать</a>
                         </div>
+                    </div>
                         <ul class="trials__list slider__car">
                             <li class="slider__car-item _active"><img src="/image/sec_three_slide4.jpg" alt="Машина 1"
                                     class="slider__car-image _active"></li>
@@ -191,6 +218,7 @@
                         </div>
                     </li>
                     <li class="trials__list-item3">
+                        <div class="trials__infos">
                         <h3 class="trials__list-title">EXPERIENCE</h3>
                         <p class="trials__list-price"><span class="trials__span">от 7000 ₽</span></p>
                         <ul class="trials__list list-description">
@@ -220,6 +248,7 @@
                             <a class="path__link" href="">Подробнее</a>
                             <a class="path__link-reservation" href="">Забронировать</a>
                         </div>
+                    </div>
                         <ul class="trials__list slider__car">
                             <li class="slider__car-item"><img src="/image/sec_three_slide4.jpg" alt="Машина 1"
                                     class="slider__car-image _active"></li>
@@ -240,6 +269,7 @@
                             </button>
                             <p class="slider__photo-scroll">scroll</p>
                         </div>
+                       
                     </li>
                 </ul>
             </div>
@@ -376,6 +406,7 @@
                     Хотите сделать оригинальный подарок? Подарите незабываемые эмоции -
                     лучший подарок!
                 </p>
+                
                 <div class="certificate__logo imgser">
                     <div class="imgser__body">
                         <img class="imgser__acs" src="/image/bant.svg" alt="бант">
@@ -402,8 +433,9 @@
             </div>
         </section>
         <section class="question-answer" id="questions-answers">
+            <h2 class="helper__title">Вопросы-ответы</h2>
+            <div class="help_answer">
             <div class="question-answer__helper helper">
-                <h2 class="helper__title">Вопросы-ответы</h2>
                 <ul class="helper__list">
                     <li class="help__list-item __activete">
                         <div class="questioner__header">
@@ -478,9 +510,11 @@
                 </p>
                 <a class="questioner__link">Задать вопрос</a>
             </div>
+        </div>
         </section>
     </main>
     <footer class="footer" id="contacts">
+        <div class="footer__wrapp">
         <h2 class="footer__title">Контакты</h2>
         <img class="footer__image" src="/image/map_coordinate.png" alt="карта">
         <ul class="footer__list condition__contacts">
@@ -521,7 +555,8 @@
                 </div>
             </li>
         </ul>
-        <div class="foote__list-of-social-network social-network">
+    </div>
+        <div class="foote__list-of-social-network ">
             <h3 class="social-network-connection">Написать нам:</h3>
             <a class="social-network__link-whatsapp" href="">
                 <img class="social-network__image" src="/image/whatsap.svg" alt="иконка ватсап">
@@ -530,6 +565,7 @@
                 <img class="social-network__image" src="/image/instagram.svg" alt="иконка инста">
             </a>
         </div>
+        
         <nav class="footer__navigation navigation">
             <img class="footer__logo" src="/image/logofuter.svg" alt="логотип">
             <ul class="navigation__list">
