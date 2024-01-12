@@ -129,9 +129,12 @@ label input:focus + span::before {
 label checkbox:focus + span::before {
   transform: scaleX(1); 
 }
-.checkbox-list__wrapper input:checked + .pse_title,
-.checkbox-list__wrapper input:checked + .psc_title {
-    text-decoration: line-through;
+
+.pse__input:checked ~ .pse_title {
+  text-decoration: line-through;
+}
+.psc__input:checked ~ .psc_title {
+  text-decoration: line-through;
 }
 legend {
   text-align: left;
