@@ -90,7 +90,35 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.219); 
 }
 
-
+.skip-link {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  top: 100px;
+  left: 85%;
+  border-radius: 9px;
+  padding: 10px 15px;
+  color: #ffffff;
+  background: #208083;
+}
+.skip-link:focus {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 10px 15px;
+  color: #d3d3d3;
+  background: #176264;
+}
+.skip-link:hover {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 10px 15px;
+  color: #bebebe;
+  background: #14595c;
+}
 .span {
   font-weight: bold;
 }
@@ -124,7 +152,7 @@ header {
   display: none;
   
 }
-.header__menu-link {
+.skiplink {
   display: none;
 }
 .header__phone {
@@ -2196,7 +2224,7 @@ header {
   width: 30%;
   display: block;
 }
-.header__menu-link, header__menu-link:visited{
+.skiplink, skiplink:visited{
   display: block;
   text-decoration: none;
   color: var(--highlighted-text);
@@ -2208,10 +2236,10 @@ header {
   font-family: Montserrat;
   font-weight: 600;
 }
-.header__menu-link.__activeted {
+.skiplink.__activeted {
   color: var(--attention-text);
 }
-.header__menu-link:hover{
+.skiplink:hover{
   display: block;
   text-decoration: none;
   color: #b6b6b6;
@@ -2223,7 +2251,7 @@ header {
   font-family: Montserrat;
   font-weight: 600;
 }
-.header__menu-link:active{
+.skiplink:active{
   display: block;
   text-decoration: none;
   color: #969696;
@@ -2235,7 +2263,7 @@ header {
   font-family: Montserrat;
   font-weight: 600;
 }
-.header__menu-link:focus{
+.skiplink:focus{
   display: block;
   text-decoration: none;
   color: #969696;
@@ -2257,6 +2285,7 @@ header {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  margin: 0 0;
 }
 .phone__number, phone__number:visited {
   display: flex;
@@ -2312,7 +2341,7 @@ header {
   width: 70px;
   border-bottom: solid 3px var(--attention-text);
   position: absolute;
-  left: calc(100% - 56rem);
+  left: -20%;
   top: 11px;
   z-index: 1;
 }

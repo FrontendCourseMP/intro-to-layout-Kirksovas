@@ -12,27 +12,27 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <img class="header__logo" src="/image/logoser.svg" alt="Иконка">
+            <img class="header__logo" src="/image/logoser.svg" alt="">
             <ul class="header__menu">
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="">Маршруты</a>
+                    <a class="skiplink" href="#routs">Маршруты</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="">Галерея </a>
-                </li>
-                <li class="header__menu-item"> 
-                    <a class="header__menu-link" href="">Вопрос-ответ</a>
+                    <a class="skiplink" href="#specifics">Галерея</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link"  href="">Контакты</a>
+                    <a class="skiplink" href="#questions-answer">Вопрос-ответ</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link __activeted" href="">Забронировать</a>
+                    <a class="skiplink" href="#contacto">Контакты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="skiplink __activeted" href="#bronya">Забронировать</a>
                 </li>
             </ul>
             <div class="header__phone">
                 <a href="" class="phone__number">
-                    <img class="phone__img" src="/image/header__phone.svg" alt="телефон">
+                    <img class="phone__img" src="/image/header__phone.svg" alt="номер телефона">
                     +7 928 333 26 45
                 </a>
                 <a href="" class="phone__link">Перезвоните мне</a>
@@ -43,13 +43,16 @@
         </div>
     </header>
     <main class="main">
+        <a class="skip-link" href="#condition">
+            Перейти к условиями
+          </a>
         <section class="maining">
             <div class="maining__information">
                 <h1 class="maining__title">Экскурсии на квадроциклах в Геленджике</h1>
                 <p class="maining__subtitle">приезжайте за новыми ощущениями и эмоциями!</p>
                 <a class="maining__link link" href="">
                     Подобрать маршрут
-                    <img src="/image/стрелка.svg" alt="стрелочка" class="link-image">
+                    <img src="/image/стрелка.svg" alt="вперед" class="link-image">
                 </a>
                 <div class="maining__slider slider">
                     <button class="slider__button-slider slider__button">
@@ -73,23 +76,23 @@
 
                 <ul class="advantages__list">
                     <li class="advantages__list-item">
-                        <img src="/image/trees.svg" alt="икнока леса" class="advantages__list-image">
+                        <img src="/image/trees.svg" alt="" class="advantages__list-image">
                         <h3 class="advantages__list-title">Увлекательные экскурсии</h3>
                         <p class="advantages__list-description">Маршруты от лесных дорожек до полного бездорожья!</p>
                     </li>
                     <li class="advantages__list-item">
-                        <img class="advantages__list-imager" src="/image/bycles.svg" alt="иконка байка">
+                        <img class="advantages__list-imager" src="/image/bycles.svg" alt="">
                         <h3 class="advantages__list-title">Надежная техника</h3>
                         <p class="advantages__list-description">18 квадроциклов всех японских брендов</p>
                     </li>
                     <li class="advantages__list-item">
-                        <img src="/image/b_hat.svg" alt="иконка шлема" class="advantages__list-image">
+                        <img src="/image/b_hat.svg" alt="" class="advantages__list-image">
                         <h3 class="advantages__list-title">Экипировка бесплатно</h3>
                         <p class="advantages__list-description">Необходимая экипировка выдается бесплатно</p>
                     </li>
                     <li class="advantages__list-item">
-                        <img src="/image/instructor.svg" alt="иконка сотрудника" class="advantages__list-image">
-                        <h3 class="advantages__list-title">пытные инструктора</h3>
+                        <img src="/image/instructor.svg" alt="" class="advantages__list-image">
+                        <h3 class="advantages__list-title">Опытные инструктора</h3>
                         <p class="advantages__list-description">Обеспечат полную безопасность Вашего отдыха</p>
                     </li>
                 </ul>
@@ -101,52 +104,53 @@
                 <ul class="trials__list">
                     <li class="trials__list-item1">
                         <div class="trials__infos">
-                        <h3 class="trials__list-title">БАЗОВЫЙ</h3>
-                        <p class="trials__list-price"><span class="trials__span"> от 4000 ₽ </span></p>
-                        <ul class="trials__list list-description">
-                            <li class="list-description__item">
-                                <img src="/image/bi_clock-fill.svg" alt="иконка часы" class="list-description__image">
-                                <p class="list-description__special">Время в пути: <span class="trials__span">1,5 -
-                                        2
-                                        часа</span></p>
-                            </li>
-                            <li class="list-description__item">
-                                <img src="/image/bx_bxs-map.svg" alt="иконка навигации" class="list-description__image">
-                                <p class="list-description__special">Расстояние: <span class="trials__span">20 - 25
-                                        км</span></p>
-                            </li>
-                            <li class="list-description__item">
-                                <img src="/image/ant-design_star-filled.svg" alt="иконка звезды"
-                                    class="list-description__image">
-                                <p class="list-description__special">Сложность: <span class="trials__span">5***</span>
+                            <h3 class="trials__list-title">БАЗОВЫЙ</h3>
+                            <p class="trials__list-price"><span class="trials__span"> от 4000 ₽ </span></p>
+                            <ul class="trials__list list-description">
+                                <li class="list-description__item">
+                                    <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
+                                    <p class="list-description__special">Время в пути: <span class="trials__span">1,5 -
+                                            2
+                                            часа</span></p>
+                                </li>
+                                <li class="list-description__item">
+                                    <img src="/image/bx_bxs-map.svg" alt="расстояние" class="list-description__image">
+                                    <p class="list-description__special">Расстояние: <span class="trials__span">20 - 25
+                                            км</span></p>
+                                </li>
+                                <li class="list-description__item">
+                                    <img src="/image/ant-design_star-filled.svg" alt="сложность"
+                                        class="list-description__image">
+                                    <p class="list-description__special">Сложность: <span
+                                            class="trials__span">5***</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="route-wrapper path">
+                                <h4 class="path-title">МАРШРУТ</h4>
+                                <img class="path-image" src="/image/map.svg" alt="">
+                                <p class="path-discription">
+                                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                                    --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                                    Форсаж
                                 </p>
-                            </li>
-                        </ul>
-                        <div class="route-wrapper path">
-                            <h4 class="path-title">МАРШРУТ</h4>
-                            <img class="path-image" src="/image/map.svg" alt="карта">
-                            <p class="path-discription">
-                                Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                                --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-                                Форсаж
-                            </p>
-                            <a class="path__link" href="">Подробнее</a>
-                            <a class="path__link-reservation" href="">Забронировать</a>
-                        </div>
+                                <a class="path__link" href="">Подробнее</a>
+                                <a class="path__link-reservation" href="">Забронировать</a>
+                            </div>
                         </div>
                         <ul class="trials__list slider__car">
                             <li class="slider__car-item">
-                                <img src="/image/sec_three_slide1.jpg" alt="Машина 1"
+                                <img src="/image/sec_three_slide1.jpg" alt="пример перемещения на спец. транспорте"
                                     class="slider__car-image _active">
-                                </li>
+                            </li>
                             <li class="slider__car-item">
-                                <img src="/image/sec_three_slide2.jpg" alt="Машина 2"
+                                <img src="/image/sec_three_slide4.jpg" alt="пример перемещения на спец. транспорте"
                                     class="slider__car-image">
-                                </li>
+                            </li>
                             <li class="slider__car-item">
-                                <img src="/image/sec_three_slide3.jpg" alt="Машина 3"
+                                <img src="/image/sec_three_slide3.jpg" alt="пример перемещения на спец. транспорте"
                                     class="slider__car-image3">
-                                </li>
+                            </li>
                         </ul>
                         <div class="trials__list slider__photo">
                             <button class="slider__photo-button">
@@ -164,45 +168,46 @@
                     </li>
                     <li class="trials__list-item2">
                         <div class="trials__infos">
-                        <h3 class="trials__list-title">РАСШИРЕННЫЙ</h3>
-                        <p class="trials__list-price"><span class="trials__span">от 16000 ₽</span></p>
-                        <ul class="trials__list list-description">
-                            <li class="list-description__item">
-                                <img src="/image/bi_clock-fill.svg" alt="иконка часы" class="list-description__image">
-                                <p class="list-description__special">Время в пути: <span class="trials__span">6 - 8
-                                        часов</span></p>
-                            </li>
-                            <li class="list-description__item">
-                                <img src="/image/bx_bxs-map.svg" alt="иконка навигации" class="list-description__image">
-                                <p class="list-description__special">Расстоян ие: <span class="trials__span">60 - 70
-                                        км</span></p>
-                            </li>
-                            <li class="list-description__item">
-                                <img src="/image/ant-design_star-filled.svg" alt="иконка звезды"
-                                    class="list-description__image">
-                                <p class="list-description__special">Сложность: <span class="trials__span">5***</span>
+                            <h3 class="trials__list-title">РАСШИРЕННЫЙ</h3>
+                            <p class="trials__list-price"><span class="trials__span">от 16000 ₽</span></p>
+                            <ul class="trials__list list-description">
+                                <li class="list-description__item">
+                                    <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
+                                    <p class="list-description__special">Время в пути: <span class="trials__span">6 - 8
+                                            часов</span></p>
+                                </li>
+                                <li class="list-description__item">
+                                    <img src="/image/bx_bxs-map.svg" alt="расстояние" class="list-description__image">
+                                    <p class="list-description__special">Расстояние: <span class="trials__span">60 - 70
+                                            км</span></p>
+                                </li>
+                                <li class="list-description__item">
+                                    <img src="/image/ant-design_star-filled.svg" alt="сложность"
+                                        class="list-description__image">
+                                    <p class="list-description__special">Сложность: <span
+                                            class="trials__span">5***</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="route-wrapper path">
+                                <h4 class="path-title">МАРШРУТ</h4>
+                                <img class="path-image" src="/image/map.svg" alt="">
+                                <p class="path-discription">
+                                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                                    --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                                    Форсаж
                                 </p>
-                            </li>
-                        </ul>
-                        <div class="route-wrapper path">
-                            <h4 class="path-title">МАРШРУТ</h4>
-                            <img class="path-image" src="/image/map.svg" alt="карта">
-                            <p class="path-discription">
-                                Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                                --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-                                Форсаж
-                            </p>
-                            <a class="path__link" href="">Подробнее</a>
-                            <a class="path__link-reservation" href="">Забронировать</a>
+                                <a class="path__link" href="">Подробнее</a>
+                                <a class="path__link-reservation" href="">Забронировать</a>
+                            </div>
                         </div>
-                    </div>
                         <ul class="trials__list slider__car">
-                            <li class="slider__car-item _active"><img src="/image/sec_three_slide4.jpg" alt="Машина 1"
-                                    class="slider__car-image _active"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide5.jpg" alt="Машина 2"
-                                    class="slider__car-image"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide6.jpg" alt="Машина 3"
-                                    class="slider__car-image3"></li>
+                            <li class="slider__car-item _active"><img src="/image/sec_three_slide4.jpg"
+                                    alt="пример перемещения на спец. транспорте" class="slider__car-image _active"></li>
+                            <li class="slider__car-item"><img src="/image/sec_three_slide5.jpg"
+                                    alt="пример перемещения на спец. транспорте" class="slider__car-image"></li>
+                            <li class="slider__car-item"><img src="/image/sec_three_slide6.jpg"
+                                    alt="пример перемещения на спец. транспорте" class="slider__car-image3"></li>
                         </ul>
                         <div class="trials__list slider__photo">
                             <button class="slider__photo-button">
@@ -219,43 +224,44 @@
                     </li>
                     <li class="trials__list-item3">
                         <div class="trials__infos">
-                        <h3 class="trials__list-title">EXPERIENCE</h3>
-                        <p class="trials__list-price"><span class="trials__span">от 7000 ₽</span></p>
-                        <ul class="trials__list list-description">
-                            <li class="list-description__item">
-                                <img src="/image/bi_clock-fill.svg" alt="иконка часы" class="list-description__image">
-                                <p class="list-description__special">Время в пути: <span class="trials__span">4
-                                        часа</span></p>
-                            </li>
-                            <li class="list-description__item">
-                                <img src="/image/bx_bxs-map.svg" alt="иконка навигации" class="list-description__image">
-                                <p class="list-description__special">Расстояние: <span class="trials__span">40 - 50
-                                        км</span></p>
-                            </li>
-                            <li class="list-description__item">
-                                <img src="/image/ant-design_star-filled.svg" alt="иконка звезды"
-                                    class="list-description__image">
-                                <p class="list-description__special">Сложность: <span class="trials__span">5***</span>
+                            <h3 class="trials__list-title">EXPERIENCE</h3>
+                            <p class="trials__list-price"><span class="trials__span">от 7000 ₽</span></p>
+                            <ul class="trials__list list-description">
+                                <li class="list-description__item">
+                                    <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
+                                    <p class="list-description__special">Время в пути: <span class="trials__span">4
+                                            часа</span></p>
+                                </li>
+                                <li class="list-description__item">
+                                    <img src="/image/bx_bxs-map.svg" alt="расстояние" class="list-description__image">
+                                    <p class="list-description__special">Расстояние: <span class="trials__span">40 - 50
+                                            км</span></p>
+                                </li>
+                                <li class="list-description__item">
+                                    <img src="/image/ant-design_star-filled.svg" alt="сложность"
+                                        class="list-description__image">
+                                    <p class="list-description__special">Сложность: <span
+                                            class="trials__span">5***</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="route-wrapper path">
+                                <h4 class="path-title">МАРШРУТ</h4>
+                                <img class="path-image" src="/image/map.svg" alt="карта">
+                                <p class="path-discription">
+                                    Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж
                                 </p>
-                            </li>
-                        </ul>
-                        <div class="route-wrapper path">
-                            <h4 class="path-title">МАРШРУТ</h4>
-                            <img class="path-image" src="/image/map.svg" alt="карта">
-                            <p class="path-discription">
-                                Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж
-                            </p>
-                            <a class="path__link" href="">Подробнее</a>
-                            <a class="path__link-reservation" href="">Забронировать</a>
+                                <a class="path__link" href="">Подробнее</a>
+                                <a class="path__link-reservation" href="">Забронировать</a>
+                            </div>
                         </div>
-                    </div>
                         <ul class="trials__list slider__car">
-                            <li class="slider__car-item"><img src="/image/sec_three_slide4.jpg" alt="Машина 1"
-                                    class="slider__car-image _active"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide3.jpg" alt="Машина 2"
-                                    class="slider__car-image"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide2.jpg" alt="Машина 3"
-                                    class="slider__car-image3"></li>
+                            <li class="slider__car-item"><img src="/image/sec_three_slide4.jpg"
+                                    alt="пример перемещения на спец. транспорте" class="slider__car-image _active"></li>
+                            <li class="slider__car-item"><img src="/image/sec_three_slide3.jpg"
+                                    alt="пример перемещения на спец. транспорте" class="slider__car-image"></li>
+                            <li class="slider__car-item"><img src="/image/sec_three_slide2.jpg"
+                                    alt="пример перемещения на спец. транспорте" class="slider__car-image3"></li>
                         </ul>
                         <div class="trials__list slider__photo">
                             <button class="slider__photo-button">
@@ -269,12 +275,12 @@
                             </button>
                             <p class="slider__photo-scroll">scroll</p>
                         </div>
-                       
+
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="help">
+        <section class="help" id="bronya">
             <div class="help__wrapper">
                 <h2 class="help__title">Затрудняетесь выбрать маршрут?</h2>
                 <p class="help__subtitle">
@@ -288,28 +294,28 @@
                 <h2 class="team__title">Наша команда</h2>
                 <div class="team__list">
                     <div class="title__list person">
-                        <img src="/image/juliana.png" alt="фото сотрудника" class="person__image">
+                        <img src="/image/juliana.png" alt="фото сотрудника Юлианы" class="person__image">
                         <div class="person__content">
                             <h3 class="person__name">Юлиана</h3>
                             <p class="person__position">руководитель</p>
                         </div>
                     </div>
                     <div class="title__person person">
-                        <img src="/image/Maxim.png" alt="фото сотрудника" class="person__image">
+                        <img src="/image/Maxim.png" alt="фото сотрудника Максима" class="person__image">
                         <div class="person__content">
                             <h3 class="person__name">Максим</h3>
                             <p class="person__position">старший инструктор</p>
                         </div>
                     </div>
                     <div class="title__person person">
-                        <img src="/image/Kristina.png" alt="фото сотрудника" class="person__image">
+                        <img src="/image/Kristina.png" alt="фото сотрудника Кристина" class="person__image">
                         <div class="person__content">
                             <h3 class="person__name">Кристина</h3>
                             <p class="person__position">администратор</p>
                         </div>
                     </div>
                     <div class="title__person person">
-                        <img src="/image/Ura.png" alt="фото сотрудника" class="person__image">
+                        <img src="/image/Ura.png" alt="фото сотрудника Юрия" class="person__image">
                         <div class="person__content">
                             <h3 class="person__name">Юрий</h3>
                             <p class="person__position">старший механик</p>
@@ -323,21 +329,21 @@
                 <h2 class="conditions__title">Условия предоставления услуг</h2>
                 <div class="detail__wrapper">
                     <div class="conditions__detail detail">
-                        <img src="/image/chekandel.svg" alt="галочка" class="detail__image">
+                        <img src="/image/chekandel.svg" alt="" class="detail__image">
                         <p class="detail__description">
                             При прокате или аренде строго соблюдать правила техники
                             безопасности и все требования инструктора!
                         </p>
                     </div>
                     <div class="conditions__detail detail">
-                        <img src="/image/chekandel.svg" alt="галочка" class="detail__image">
+                        <img src="/image/chekandel.svg" alt="" class="detail__image">
                         <p class="detail__description">
                             К управлению <span class="detail__span">НЕ ДОПУСКАЮТСЯ</span> лица младше 16 лет и лица в
                             алкогольном опьянении!
                         </p>
                     </div>
                     <div class="conditions__detail detail">
-                        <img src="/image/chekandel.svg" alt="галочка" class="detail__image">
+                        <img src="/image/chekandel.svg" alt="" class="detail__image">
                         <p class="detail__description">
                             Распивать спиртные напитки во время проката, аренды <span
                                 class="detail__span">ЗАПРЕЩЕНО!</span>
@@ -345,21 +351,21 @@
                         </p>
                     </div>
                     <div class="conditions__detail detail">
-                        <img src="/image/chekandel.svg" alt="галочка" class="detail__image">
+                        <img src="/image/chekandel.svg" alt="" class="detail__image">
                         <p class="detail__description">
                             Управление осуществляйте в меру своих сил и возможностей. Не
                             переоценивайте себя! Это опасно!!!
                         </p>
                     </div>
                     <div class="conditions__detail detail">
-                        <img src="/image/chekandel.svg" alt="галочка" class="detail__image">
+                        <img src="/image/chekandel.svg" alt="" class="detail__image">
                         <p class="detail__description">
                             Перед каждым катанием опытный инструктор научит Вас основам
                             управления и будет сопровождать на протяжении всего маршрута.
                         </p>
                     </div>
                     <div class="conditions__detail detail">
-                        <img src="/image/chekandel.svg" alt="галочка" class="detail__image">
+                        <img src="/image/chekandel.svg" alt="" class="detail__image">
                         <p class="detail__description">
                             При прокате или аренде строго соблюдать правила техники
                             безопасности и все требования инструктора!
@@ -406,7 +412,7 @@
                     Хотите сделать оригинальный подарок? Подарите незабываемые эмоции -
                     лучший подарок!
                 </p>
-                
+
                 <div class="certificate__logo imgser">
                     <div class="imgser__body">
                         <img class="imgser__acs" src="/image/bant.svg" alt="бант">
@@ -435,137 +441,141 @@
         <section class="question-answer" id="questions-answers">
             <h2 class="helper__title">Вопросы-ответы</h2>
             <div class="help_answer">
-            <div class="question-answer__helper helper">
-                <ul class="helper__list">
-                    <li class="help__list-item __activete">
-                        <div class="questioner__header">
-                            <h3 class="form-answer__title">Актуальный вопрос?</h3>
-                            <button class="form-answer__button answer__button">
-                                <img src="/image/next2.svg" class="answer__button-image" alt="стрелочка">
-                            </button>
-                        </div>
-                        <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem
-                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen
-                            book.</p>
-                    </li>
-                    <li class="help__list-item">
-                        <div class="questioner__header">
-                            <h3 class="form-answer__title">Актуальный вопрос?</h3>
-                            <button class="form-answer__button answer__button">
-                                <img src="/image/next3.svg" class="answer__button-image" alt="стрелочка">
-                            </button>
-                        </div>
-                        <label for="" class="sr-only">
+                <div class="question-answer__helper helper">
+                    <ul class="helper__list">
+                        <li class="help__list-item __activete">
+                            <div class="questioner__header">
+                                <h3 class="form-answer__title">Актуальный вопрос?</h3>
+                                <button class="form-answer__button answer__button">
+                                    <img src="/image/next2.svg" class="answer__button-image" alt="расскрыть вопрос">
+                                </button>
+                            </div>
                             <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the printing
                                 and
                                 typesetting industry. Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 unknown printer took a galley of type and scrambled it to make a type specimen
                                 book.</p>
-                        </label>
+                        </li>
+                        <li class="help__list-item">
+                            <div class="questioner__header">
+                                <h3 class="form-answer__title">Актуальный вопрос?</h3>
+                                <button class="form-answer__button answer__button">
+                                    <img src="/image/next3.svg" class="answer__button-image" alt="расскрыть вопрос">
+                                </button>
+                            </div>
+                            <label for="" class="sr-only">
+                                <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the
+                                    printing
+                                    and
+                                    typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                            </label>
 
-                    </li>
-                    <li class="help__list-item">
-                        <div class="questioner__header">
-                            <h3 class="form-answer__title">Актуальный вопрос?</h3>
-                            <button class="form-answer__button answer__button">
-                                <img src="/image/next3.svg" class="answer__button-image" alt="стрелочка">
-                            </button>
-                        </div>
-                        <label for="" class="sr-only">
-                            <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the printing
-                                and
-                                typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen
-                                book.</p>
-                        </label>
-                    </li>
-                    <li class="help__list-item">
-                        <div class="questioner__header">
-                            <h3 class="form-answer__title">Актуальный вопрос?</h3>
-                            <button class="form-answer__button answer__button">
-                                <img src="/image/next3.svg" class="answer__button-image" alt="стрелочка">
-                            </button>
-                        </div>
-                        <label for="" class="sr-only">
-                            <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the printing
-                                and
-                                typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen
-                                book.</p>
-                        </label>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="help__list-item">
+                            <div class="questioner__header">
+                                <h3 class="form-answer__title">Актуальный вопрос?</h3>
+                                <button class="form-answer__button answer__button">
+                                    <img src="/image/next3.svg" class="answer__button-image" alt="расскрыть вопрос">
+                                </button>
+                            </div>
+                            <label for="" class="sr-only">
+                                <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the
+                                    printing
+                                    and
+                                    typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                            </label>
+                        </li>
+                        <li class="help__list-item">
+                            <div class="questioner__header">
+                                <h3 class="form-answer__title">Актуальный вопрос?</h3>
+                                <button class="form-answer__button answer__button">
+                                    <img src="/image/next3.svg" class="answer__button-image" alt="расскрыть вопрос">
+                                </button>
+                            </div>
+                            <label for="" class="sr-only">
+                                <p class="form-answer__description-look">Lorem Ipsum is simply dummy text of the
+                                    printing
+                                    and
+                                    typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question-answer__questioner questioner">
+                    <img class="questioner__image" src="/image/gridicons_chat.svg" alt="иконка чата с вопросами">
+                    <h2 class="questioner__title">Есть вопросы?</h2>
+                    <p class="questioner__description">
+                        Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы,
+                        предложения или идеи для сотрудничества
+                    </p>
+                    <a class="questioner__link">Задать вопрос</a>
+                </div>
             </div>
-            <div class="question-answer__questioner questioner">
-                <img class="questioner__image" src="/image/gridicons_chat.svg" alt="чат с вопросами">
-                <h2 class="questioner__title">Есть вопросы?</h2>
-                <p class="questioner__description">
-                    Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы,
-                    предложения или идеи для сотрудничества
-                </p>
-                <a class="questioner__link">Задать вопрос</a>
-            </div>
-        </div>
         </section>
     </main>
-    <footer class="footer" id="contacts">
+    <footer class="footer" id="contacto">
         <div class="footer__wrapp">
-        <h2 class="footer__title">Контакты</h2>
-        <img class="footer__image" src="/image/map_coordinate.png" alt="карта">
-        <ul class="footer__list condition__contacts">
-            <li class="condition__contacts-item ">
-                <div class="condition__contacts-wrapper">
-                    <span class="condition__contacts-span">
-                        <img class="condition__contacts-icon" src="/image/homes.svg" alt="Город работы">
-                    </span>
-                    <p class="condition__contacts-title">Город Геленджик</p>
-                </div>
-            </li>
-            <li class="condition__contacts-item">
-                <div class="condition__contacts-wrapper">
-                    <span class="condition__contacts-span">
-                        <img class="condition__contacts-icon" src="/image/email.svg" alt="Город работы">
-                    </span>
-                    <p class="condition__contacts-title">experience@groupgrand.ru</p>
-                </div>
-            </li>
-            <li class="condition__contacts-item">
-                <div class="condition__contacts-wrapper">
-                    <span class="condition__contacts-span">
-                        <img class="condition__contacts-icon" src="/image/phone_new.svg" alt="Город работы">
-                    </span>
-                    <p class="condition__contacts-title">+7 928 428-00-62</p>
-                </div>
-            </li>
-            <li class="condition__contacts-item">
-                <div class="condition__contacts-wrapper">
-                    <span class="condition__contacts-span">
-                        <img class="condition__contacts-icon" src="/image/clocks.svg" alt="Времяработы">
-                    </span>
-                    <div class="condition__contacts-date contacts__date">
-                        <p class="contacts__date-title">Пн - Пт: 9:00 - 18:00</p>
-                        <p class="contacts__date-title">Сб: 9:00 - 17:00 </p>
-                        <p class="contacts__date-title">Вс - выходной</p>
+            <h2 class="footer__title">Контакты</h2>
+            <img class="footer__image" src="/image/map_coordinate.png" alt="карта расположение главного офиса">
+            <ul class="footer__list condition__contacts">
+                <li class="condition__contacts-item ">
+                    <div class="condition__contacts-wrapper">
+                        <span class="condition__contacts-span">
+                            <img class="condition__contacts-icon" src="/image/homes.svg" alt="Город работы">
+                        </span>
+                        <p class="condition__contacts-title">Город Геленджик</p>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+                </li>
+                <li class="condition__contacts-item">
+                    <div class="condition__contacts-wrapper">
+                        <span class="condition__contacts-span">
+                            <img class="condition__contacts-icon" src="/image/email.svg" alt="Почта">
+                        </span>
+                        <p class="condition__contacts-title">experience@groupgrand.ru</p>
+                    </div>
+                </li>
+                <li class="condition__contacts-item">
+                    <div class="condition__contacts-wrapper">
+                        <span class="condition__contacts-span">
+                            <img class="condition__contacts-icon" src="/image/phone_new.svg" alt="Номер телефона">
+                        </span>
+                        <p class="condition__contacts-title">+7 928 428-00-62</p>
+                    </div>
+                </li>
+                <li class="condition__contacts-item">
+                    <div class="condition__contacts-wrapper">
+                        <span class="condition__contacts-span">
+                            <img class="condition__contacts-icon" src="/image/clocks.svg" alt="Время работы">
+                        </span>
+                        <div class="condition__contacts-date contacts__date">
+                            <p class="contacts__date-title">Пн - Пт: 9:00 - 18:00</p>
+                            <p class="contacts__date-title">Сб: 9:00 - 17:00 </p>
+                            <p class="contacts__date-title">Вс - выходной</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div class="foote__list-of-social-network ">
             <h3 class="social-network-connection">Написать нам:</h3>
             <a class="social-network__link-whatsapp" href="">
                 <img class="social-network__image" src="/image/whatsap.svg" alt="иконка ватсап">
             </a>
             <a class="social-network__link-instagramm" href="">
-                <img class="social-network__image" src="/image/instagram.svg" alt="иконка инста">
+                <img class="social-network__image" src="/image/instagram.svg" alt="иконка инстаграмма">
             </a>
         </div>
-        
+
         <nav class="footer__navigation navigation">
             <img class="footer__logo" src="/image/logofuter.svg" alt="логотип">
             <ul class="navigation__list">
@@ -598,7 +608,8 @@
                             формой</span></a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="/demo/demo.html"><span class="navigation__span">Задание demo</span></a>
+                    <a class="navigation__list-link" href="/demo/demo.html"><span class="navigation__span">Задание
+                            demo</span></a>
                 </li>
             </ul>
         </nav>
