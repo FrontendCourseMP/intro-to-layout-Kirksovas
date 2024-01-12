@@ -45,7 +45,7 @@
                             </label>
                             <label class="gender__title" for="female">
                                 <input type="radio" id="female" name="gender" value="female" required>
-                                <span class="female__titlw" for="female">Женский</span>
+                                <span class="female__title" for="female">Женский</span>
                             </label>
                         </div>
                     </fieldset>           
@@ -76,7 +76,8 @@
                             <option value="night">Ночь</option>
                         </select>
                     </label>
-                </fieldset>                
+                </fieldset>
+
             </div>
     
             <div class="contact__content">
@@ -84,6 +85,89 @@
                 <input type="reset" value="Сбросить">
             </div>
         </form>
+        <form class="additional__form">
+            <h2 class="additional__form-title">Вторая форма</h2>
+            <div class="definitions-list">
+                <dl class="pseudo-elements-list">
+                    <dt>Псевдоэлемент:</dt>
+                    <dd class="checked">::before</dd>
+                    <dd class="checked">::after</dd>
+                    <dd class="checked">::placeholder</dd>
+                    <dd class="">::marker</dd>
+                    <dd class="checked">::selection</dd>
+                    <dd class="checked">::first-letter</dd>
+                </dl>
+                
+                <dl class="pseudo-class-list">
+                    <dt>Псевдокласс:</dt>
+                    <dd class="checked">:hover</dd>
+                    <dd class="checked">:focus</dd>
+                    <dd class="checked">:root</dd>
+                    <dd class="checked">:link</dd>
+                    <dd class="checked">:visited</dd>
+                    <dd class="checked">:active</dd>
+                </dl>
+                
+                <fieldset class="fieldset__checkbox-list">
+                    <legend class="legend__checkbox-list">Псевдоэлементы</legend>
+                    <div class="checkbox-list__wrapper">
+                        <label class="pse__title" for="pse">
+                            <input type="checkbox" id="pse" name="pse" value="pse" checked>
+                            <span class="pse_title" for="pse">before</span>
+                        </label>
+                        <label class="pse__title" for="pse">
+                            <input type="checkbox" id="pse" name="pse" value="pse" checked>
+                            <span class="pse_title" for="pse">after</span>
+                        </label>
+                        <label class="pse__title" for="pse">
+                            <input  type="checkbox" id="pse" name="pse" value="pse" checked>
+                            <span class="pse_title" for="female">placeholder</span>
+                        </label>
+                        <label class="pse__title" for="pse">
+                            <input  type="checkbox" id="pse" name="pse" value="pse">
+                            <span class="pse_title" for="female">marker</span>
+                        </label>
+                        <label class="pse__title" for="pse">
+                            <input  type="checkbox" id="pse" name="pse" value="pse" checked>
+                            <span class="pse_title" for="female">selection</span>
+                        </label>
+                        <label class="pse__title" for="pse">
+                            <input  type="checkbox" id="pse" name="pse" value="pse" checked>
+                            <span class="pse_title" for="female">first-letter</span>
+                        </label>
+                    </div>
+                </fieldset> 
+                <fieldset class="fieldset__checkbox-list">
+                    <legend class="legend__checkbox-list">Псевдоклассы</legend>
+                    <div class="checkbox-list__wrapper">
+                        <label class="psc__title" for="psc">
+                            <input type="checkbox" id="psc" name="psс" value=psc" checked>
+                            <span class="psc_title" for="psc">hover</span>
+                        </label>
+                        <label class="psc__title" for="psc">
+                            <input type="checkbox" id="psc" name="psс" value=psc" checked>
+                            <span class="psc_title" for="psc">focus</span>
+                        </label>
+                        <label class="psc__title" for="psc">
+                            <input type="checkbox" id="psc" name="psс" value=psc" checked>
+                            <span class="psc_title" for="psc">root</span>
+                        </label>
+                        <label class="psc__title" for="psc">
+                            <input type="checkbox" id="psc" name="psс" value=psc" checked>
+                            <span class="psc_title" for="psc">link</span>
+                        </label>
+                        <label class="psc__title" for="psc">
+                            <input type="checkbox" id="psc" name="psс" value=psc" checked>
+                            <span class="psc_title" for="psc">visited</span>
+                        </label>
+                        <label class="psc__title" for="psc">
+                            <input type="checkbox" id="psc" name="psс" value=psc" checked>
+                            <span class="psc_title" for="psc">active</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+          </form>
         </div>
     </main>
     <footer class="footer" id="contacts">

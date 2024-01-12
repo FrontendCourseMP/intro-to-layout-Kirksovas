@@ -1,0 +1,92 @@
+body {
+  font-family: Montserrat, sans-serif, FuturaPT;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative; /* Добавлено */
+}
+
+.demo_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  flex-direction: column;
+  align-content: space-between;
+  position: relative; /* Добавлено */
+}
+
+.flip-card-inner {
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner:hover .flip-card-front {
+  transform: rotateY(180deg) scale(1.1);
+  transition: transform 0.5s ease; 
+}
+
+.flip-card-inner:hover .flip-card-back {
+  transform: rotateY(0deg) scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.3s linear;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner:hover .flip-card-front {
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-inner:hover .flip-card-back {
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-front__img,
+.flip-card-back__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  margin-top: 440px;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee_img {
+  display: block;
+  height: 100px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
