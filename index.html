@@ -13,21 +13,21 @@
     <header class="header">
         <div class="header__wrapper">
             <img class="header__logo" src="/image/logoser.svg" alt="">
-            <ul class="header__menu">
-                <li class="header__menu-item">
-                    <a class="skiplink" href="#routs">Маршруты</a>
+            <ul class="header__menu menu">
+                <li class="menu-item">
+                    <a class="menu__link" href="#routs">Маршруты</a>
                 </li>
-                <li class="header__menu-item">
-                    <a class="skiplink" href="#specifics">Галерея</a>
+                <li class="menu-item">
+                    <a class="menu__link" href="#specifics">Галерея</a>
                 </li>
-                <li class="header__menu-item">
-                    <a class="skiplink" href="#questions-answer">Вопрос-ответ</a>
+                <li class="menu-item">
+                    <a class="menu__link" href="#questions-answer">Вопрос-ответ</a>
                 </li>
-                <li class="header__menu-item">
-                    <a class="skiplink" href="#contacto">Контакты</a>
+                <li class="menu-item">
+                    <a class="menu__link" href="#contacto">Контакты</a>
                 </li>
-                <li class="header__menu-item">
-                    <a class="skiplink __activeted" href="#bronya">Забронировать</a>
+                <li class="menu-item">
+                    <a class="menu__link __activeted" href="#bronya">Забронировать</a>
                 </li>
             </ul>
             <div class="header__phone">
@@ -45,7 +45,7 @@
     <main class="main">
         <a class="skip-link" href="#condition">
             Перейти к условиями
-          </a>
+        </a>
         <section class="maining">
             <div class="maining__information">
                 <h1 class="maining__title">Экскурсии на квадроциклах в Геленджике</h1>
@@ -73,7 +73,6 @@
                 <label for="" class="sr-only">
                     <h2 class="advantages__title">Преимущества</h2>
                 </label>
-
                 <ul class="advantages__list">
                     <li class="advantages__list-item">
                         <img src="/image/trees.svg" alt="" class="advantages__list-image">
@@ -103,179 +102,205 @@
                 <h2 class="trials__title">Наши маршруты</h2>
                 <ul class="trials__list">
                     <li class="trials__list-item1">
-                        <div class="trials__infos">
-                            <h3 class="trials__list-title">БАЗОВЫЙ</h3>
-                            <p class="trials__list-price"><span class="trials__span"> от 4000 ₽ </span></p>
-                            <ul class="trials__list list-description">
-                                <li class="list-description__item">
-                                    <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
-                                    <p class="list-description__special">Время в пути: <span class="trials__span">1,5 -
-                                            2
-                                            часа</span></p>
-                                </li>
-                                <li class="list-description__item">
-                                    <img src="/image/bx_bxs-map.svg" alt="расстояние" class="list-description__image">
-                                    <p class="list-description__special">Расстояние: <span class="trials__span">20 - 25
-                                            км</span></p>
-                                </li>
-                                <li class="list-description__item">
-                                    <img src="/image/ant-design_star-filled.svg" alt="сложность"
-                                        class="list-description__image">
-                                    <p class="list-description__special">Сложность: <span
-                                            class="trials__span">5***</span>
+                        <div class="triallogic__wrapper">
+                            <div class="trials__infos">
+                                <h3 class="trials__list-title">БАЗОВЫЙ</h3>
+                                <p class="trials__list-price"><span class="trials__span"> от 4000 ₽ </span></p>
+                                <ul class="trials__list list-description">
+                                    <li class="list-description__item">
+                                        <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
+                                        <p class="list-description__special">Время в пути: <span
+                                                class="trials__span">1,5 -
+                                                2
+                                                часа</span></p>
+                                    </li>
+                                    <li class="list-description__item">
+                                        <img src="/image/bx_bxs-map.svg" alt="расстояние"
+                                            class="list-description__image">
+                                        <p class="list-description__special">Расстояние: <span class="trials__span">20 -
+                                                25
+                                                км</span></p>
+                                    </li>
+                                    <li class="list-description__item">
+                                        <img src="/image/ant-design_star-filled.svg" alt="сложность"
+                                            class="list-description__image">
+                                        <p class="list-description__special">Сложность: <span
+                                                class="trials__span">5***</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="route-wrapper path">
+                                    <h4 class="path-title">МАРШРУТ</h4>
+                                    <img class="path-image" src="/image/map.svg" alt="">
+                                    <p class="path-discription">
+                                        Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                                        --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                                        Форсаж
                                     </p>
-                                </li>
-                            </ul>
-                            <div class="route-wrapper path">
-                                <h4 class="path-title">МАРШРУТ</h4>
-                                <img class="path-image" src="/image/map.svg" alt="">
-                                <p class="path-discription">
-                                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                                    --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-                                    Форсаж
-                                </p>
-                                <a class="path__link" href="">Подробнее</a>
-                                <a class="path__link-reservation" href="">Забронировать</a>
+                                    <a class="path__link" href="">Подробнее</a>
+                                    <a class="path__link-reservation" href="">Забронировать</a>
+                                </div>
+                            </div>
+                            <div class="slider__wrapper">
+                                <ul class="trials__list slider__car">
+                                    <li class="slider__car-item">
+                                        <img src="/image/sec_three_slide1.jpg"
+                                            alt="пример перемещения на спец. транспорте"
+                                            class="slider__car-image _active">
+                                    </li>
+                                    <li class="slider__car-item">
+                                        <img src="/image/sec_three_slide4.jpg"
+                                            alt="пример перемещения на спец. транспорте" class="slider__car-image">
+                                    </li>
+                                    <li class="slider__car-item">
+                                        <img src="/image/sec_three_slide3.jpg"
+                                            alt="пример перемещения на спец. транспорте" class="slider__car-image3">
+                                    </li>
+                                </ul>
+                                <div class="trials__list slider__photo">
+                                    <button class="slider__photo-button">
+                                        <img class="slider__photo-image" src="/image/Ellipse7.svg" alt="cлайд1">
+                                    </button>
+                                    <button class="slider__photo-button">
+                                        <img class="slider__photo-image" src="/image/Ellipse5.svg" alt="слайд2">
+                                    </button>
+                                    <button class="slider__photo-button">
+                                        <img class="slider__photo-image" src="/image/Ellipse5.svg" alt="слайд3">
+                                    </button>
+                                    <p class="slider__photo-scroll">scroll</p>
+                                </div>
                             </div>
                         </div>
-                        <ul class="trials__list slider__car">
-                            <li class="slider__car-item">
-                                <img src="/image/sec_three_slide1.jpg" alt="пример перемещения на спец. транспорте"
-                                    class="slider__car-image _active">
-                            </li>
-                            <li class="slider__car-item">
-                                <img src="/image/sec_three_slide4.jpg" alt="пример перемещения на спец. транспорте"
-                                    class="slider__car-image">
-                            </li>
-                            <li class="slider__car-item">
-                                <img src="/image/sec_three_slide3.jpg" alt="пример перемещения на спец. транспорте"
-                                    class="slider__car-image3">
-                            </li>
-                        </ul>
-                        <div class="trials__list slider__photo">
-                            <button class="slider__photo-button">
-                                <img class="slider__photo-image" src="/image/Ellipse7.svg" alt="cлайд1">
-                            </button>
-                            <button class="slider__photo-button">
-                                <img class="slider__photo-image" src="/image/Ellipse5.svg" alt="слайд2">
-                            </button>
-                            <button class="slider__photo-button">
-                                <img class="slider__photo-image" src="/image/Ellipse5.svg" alt="слайд3">
-                            </button>
-                            <p class="slider__photo-scroll">scroll</p>
-                        </div>
-
                     </li>
                     <li class="trials__list-item2">
-                        <div class="trials__infos">
-                            <h3 class="trials__list-title">РАСШИРЕННЫЙ</h3>
-                            <p class="trials__list-price"><span class="trials__span">от 16000 ₽</span></p>
-                            <ul class="trials__list list-description">
-                                <li class="list-description__item">
-                                    <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
-                                    <p class="list-description__special">Время в пути: <span class="trials__span">6 - 8
-                                            часов</span></p>
-                                </li>
-                                <li class="list-description__item">
-                                    <img src="/image/bx_bxs-map.svg" alt="расстояние" class="list-description__image">
-                                    <p class="list-description__special">Расстояние: <span class="trials__span">60 - 70
-                                            км</span></p>
-                                </li>
-                                <li class="list-description__item">
-                                    <img src="/image/ant-design_star-filled.svg" alt="сложность"
-                                        class="list-description__image">
-                                    <p class="list-description__special">Сложность: <span
-                                            class="trials__span">5***</span>
+                        <div class="triallogic__wrapper _reversed">
+                            <div class="trials__infos">
+                                <h3 class="trials__list-title">РАСШИРЕННЫЙ</h3>
+                                <p class="trials__list-price"><span class="trials__span">от 16000 ₽</span></p>
+                                <ul class="trials__list list-description">
+                                    <li class="list-description__item">
+                                        <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
+                                        <p class="list-description__special">Время в пути: <span class="trials__span">6
+                                                - 8
+                                                часов</span></p>
+                                    </li>
+                                    <li class="list-description__item">
+                                        <img src="/image/bx_bxs-map.svg" alt="расстояние"
+                                            class="list-description__image">
+                                        <p class="list-description__special">Расстояние: <span class="trials__span">60 -
+                                                70
+                                                км</span></p>
+                                    </li>
+                                    <li class="list-description__item">
+                                        <img src="/image/ant-design_star-filled.svg" alt="сложность"
+                                            class="list-description__image">
+                                        <p class="list-description__special">Сложность: <span
+                                                class="trials__span">5***</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="route-wrapper path">
+                                    <h4 class="path-title">МАРШРУТ</h4>
+                                    <img class="path-image" src="/image/map.svg" alt="">
+                                    <p class="path-discription">
+                                        Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
+                                        --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                                        Форсаж
                                     </p>
-                                </li>
-                            </ul>
-                            <div class="route-wrapper path">
-                                <h4 class="path-title">МАРШРУТ</h4>
-                                <img class="path-image" src="/image/map.svg" alt="">
-                                <p class="path-discription">
-                                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис
-                                    --Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
-                                    Форсаж
-                                </p>
-                                <a class="path__link" href="">Подробнее</a>
-                                <a class="path__link-reservation" href="">Забронировать</a>
+                                    <a class="path__link" href="">Подробнее</a>
+                                    <a class="path__link-reservation" href="">Забронировать</a>
+                                </div>
                             </div>
-                        </div>
-                        <ul class="trials__list slider__car">
-                            <li class="slider__car-item _active"><img src="/image/sec_three_slide4.jpg"
-                                    alt="пример перемещения на спец. транспорте" class="slider__car-image _active"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide5.jpg"
-                                    alt="пример перемещения на спец. транспорте" class="slider__car-image"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide6.jpg"
-                                    alt="пример перемещения на спец. транспорте" class="slider__car-image3"></li>
-                        </ul>
-                        <div class="trials__list slider__photo">
-                            <button class="slider__photo-button">
-                                <img class="slider__photo-image _active" src="/image/Ellipse7.svg" alt="cлайд1">
-                            </button>
-                            <button class="slider__photo-button">
-                                <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд2">
-                            </button>
-                            <button class="slider__photo-button">
-                                <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд3">
-                            </button>
-                            <p class="slider__photo-scroll">scroll</p>
+                            <div class="slider__wrapper">
+                                <ul class="trials__list slider__car __reversed">
+                                    <li class="slider__car-item _active">
+                                        <img src="/image/sec_three_slide4.jpg"
+                                            alt="пример перемещения на спец. транспорте"
+                                            class="slider__car-image _active">
+                                    </li>
+                                    <li class="slider__car-item"><img src="/image/sec_three_slide5.jpg"
+                                            alt="пример перемещения на спец. транспорте" class="slider__car-image"></li>
+                                    <li class="slider__car-item"><img src="/image/sec_three_slide6.jpg"
+                                            alt="пример перемещения на спец. транспорте" class="slider__car-image3">
+                                    </li>
+                                </ul>
+                                <div class="trials__list slider__photo __reversed">
+                                    <button class="slider__photo-button">
+                                        <img class="slider__photo-image _active" src="/image/Ellipse7.svg" alt="cлайд1">
+                                    </button>
+                                    <button class="slider__photo-button">
+                                        <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд2">
+                                    </button>
+                                    <button class="slider__photo-button">
+                                        <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд3">
+                                    </button>
+                                    <p class="slider__photo-scroll">scroll</p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="trials__list-item3">
-                        <div class="trials__infos">
-                            <h3 class="trials__list-title">EXPERIENCE</h3>
-                            <p class="trials__list-price"><span class="trials__span">от 7000 ₽</span></p>
-                            <ul class="trials__list list-description">
-                                <li class="list-description__item">
-                                    <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
-                                    <p class="list-description__special">Время в пути: <span class="trials__span">4
-                                            часа</span></p>
-                                </li>
-                                <li class="list-description__item">
-                                    <img src="/image/bx_bxs-map.svg" alt="расстояние" class="list-description__image">
-                                    <p class="list-description__special">Расстояние: <span class="trials__span">40 - 50
-                                            км</span></p>
-                                </li>
-                                <li class="list-description__item">
-                                    <img src="/image/ant-design_star-filled.svg" alt="сложность"
-                                        class="list-description__image">
-                                    <p class="list-description__special">Сложность: <span
-                                            class="trials__span">5***</span>
+                        <div class="triallogic__wrapper">
+                            <div class="trials__infos">
+                                <h3 class="trials__list-title">EXPERIENCE</h3>
+                                <p class="trials__list-price"><span class="trials__span">от 7000 ₽</span></p>
+                                <ul class="trials__list list-description">
+                                    <li class="list-description__item">
+                                        <img src="/image/bi_clock-fill.svg" alt="время" class="list-description__image">
+                                        <p class="list-description__special">Время в пути: <span class="trials__span">4
+                                                часа</span></p>
+                                    </li>
+                                    <li class="list-description__item">
+                                        <img src="/image/bx_bxs-map.svg" alt="расстояние"
+                                            class="list-description__image">
+                                        <p class="list-description__special">Расстояние: <span class="trials__span">40 -
+                                                50
+                                                км</span></p>
+                                    </li>
+                                    <li class="list-description__item">
+                                        <img src="/image/ant-design_star-filled.svg" alt="сложность"
+                                            class="list-description__image">
+                                        <p class="list-description__special">Сложность: <span
+                                                class="trials__span">5***</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="route-wrapper path">
+                                    <h4 class="path-title">МАРШРУТ</h4>
+                                    <img class="path-image" src="/image/map.svg" alt="карта">
+                                    <p class="path-discription">
+                                        Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж
                                     </p>
-                                </li>
-                            </ul>
-                            <div class="route-wrapper path">
-                                <h4 class="path-title">МАРШРУТ</h4>
-                                <img class="path-image" src="/image/map.svg" alt="карта">
-                                <p class="path-discription">
-                                    Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио –Форсаж
-                                </p>
-                                <a class="path__link" href="">Подробнее</a>
-                                <a class="path__link-reservation" href="">Забронировать</a>
+                                    <a class="path__link" href="">Подробнее</a>
+                                    <a class="path__link-reservation" href="">Забронировать</a>
+                                </div>
+                            </div>
+                            <div class="slider__wrapper">
+                                <ul class="trials__list slider__car">
+                                    <li class="slider__car-item"><img src="/image/sec_three_slide4.jpg"
+                                            alt="пример перемещения на спец. транспорте"
+                                            class="slider__car-image _active">
+                                    </li>
+                                    <li class="slider__car-item"><img src="/image/sec_three_slide3.jpg"
+                                            alt="пример перемещения на спец. транспорте" class="slider__car-image"></li>
+                                    <li class="slider__car-item"><img src="/image/sec_three_slide2.jpg"
+                                            alt="пример перемещения на спец. транспорте" class="slider__car-image3">
+                                    </li>
+                                </ul>
+                                <div class="trials__list slider__photo">
+                                    <button class="slider__photo-button">
+                                        <img class="slider__photo-image" src="/image/Ellipse7.svg" alt="cлайд1">
+                                    </button>
+                                    <button class="slider__photo-button">
+                                        <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд2">
+                                    </button>
+                                    <button class="slider__photo-button">
+                                        <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд3">
+                                    </button>
+                                    <p class="slider__photo-scroll">scroll</p>
+                                </div>
                             </div>
                         </div>
-                        <ul class="trials__list slider__car">
-                            <li class="slider__car-item"><img src="/image/sec_three_slide4.jpg"
-                                    alt="пример перемещения на спец. транспорте" class="slider__car-image _active"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide3.jpg"
-                                    alt="пример перемещения на спец. транспорте" class="slider__car-image"></li>
-                            <li class="slider__car-item"><img src="/image/sec_three_slide2.jpg"
-                                    alt="пример перемещения на спец. транспорте" class="slider__car-image3"></li>
-                        </ul>
-                        <div class="trials__list slider__photo">
-                            <button class="slider__photo-button">
-                                <img class="slider__photo-image" src="/image/Ellipse7.svg" alt="cлайд1">
-                            </button>
-                            <button class="slider__photo-button">
-                                <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд2">
-                            </button>
-                            <button class="slider__photo-button">
-                                <img class="slider__button-image" src="/image/Ellipse5.svg" alt="слайд3">
-                            </button>
-                            <p class="slider__photo-scroll">scroll</p>
-                        </div>
-
                     </li>
                 </ul>
             </div>
@@ -289,7 +314,7 @@
                 <a class="help__link" href="">Начать тест</a>
             </div>
         </section>
-        <section class="">
+        <section class="team">
             <div class="team__wrapper">
                 <h2 class="team__title">Наша команда</h2>
                 <div class="team__list">
@@ -383,8 +408,8 @@
                             <img src="/image/present.jpg" alt="фото подарка" class="offers-list__image">
                             <div class="offers-list__info">
                                 <h3 class="offers-list__title"><span class="offers__span">Скидка 10%</span></h3>
-                                <h4 class="offers-list__subtitle"><span class="offers__span">на День Рождение</span>
-                                </h4>
+                                <h3 class="offers-list__subtitle"><span class="offers__span">на День Рождение</span>
+                                </h3>
                                 <p class="offers-list__dercription">в честь Дня Рождения - дарим имениннику скидку 10%
                                 </p>
                             </div>
@@ -412,30 +437,33 @@
                     Хотите сделать оригинальный подарок? Подарите незабываемые эмоции -
                     лучший подарок!
                 </p>
-
-                <div class="certificate__logo imgser">
-                    <div class="imgser__body">
-                        <img class="imgser__acs" src="/image/bant.svg" alt="бант">
-                        <h2 class="imgser__title">
-                            Сертифакт
-                        </h2>
-                        <img class="imgser__logo" src="/image/logoser.svg" alt="логотип">
-                        <div class="imgser__info">
-                            <h3 class="imgser__subtitle">
-                                Катание
-                                на квадроциклах
-                            </h3>
-                            <p class="imgser__desc">Маршрут: Лесная прогулка</p>
+                <div class="present__wrapper">
+                    <div class="certificate__logo imgser">
+                        <div class="imgser__body">
+                            <img class="imgser__acs" src="/image/bant.svg" alt="бант">
+                            <h2 class="imgser__title">
+                                Сертифакт
+                            </h2>
+                            <img class="imgser__logo" src="/image/logoser.svg" alt="логотип">
+                            <div class="imgser__info">
+                                <h3 class="imgser__subtitle">
+                                    Катание
+                                    на квадроциклах
+                                </h3>
+                                <p class="imgser__desc">Маршрут: Лесная прогулка</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="certificat__wrapper">
+                        <p class="present__description">
+                            Хотите удивить своих близких оригинальным подарком? Подарочный
+                            сертификат на экскурсию на квадроциклах станет не просто интересным
+                            подарком, но и реальной возможностью приблизить Ваших друзей и близких
+                            к новому увлечению.
+                        </p>
+                        <a class="present__link" href="">Подберем сертификат для вас</a>
+                    </div>
                 </div>
-                <p class="present__description">
-                    Хотите удивить своих близких оригинальным подарком? Подарочный
-                    сертификат на экскурсию на квадроциклах станет не просто интересным
-                    подарком, но и реальной возможностью приблизить Ваших друзей и близких
-                    к новому увлечению.
-                </p>
-                <a class="present__link" href="">Подберем сертификат для вас</a>
             </div>
         </section>
         <section class="question-answer" id="questions-answers">
@@ -526,56 +554,59 @@
     <footer class="footer" id="contacto">
         <div class="footer__wrapp">
             <h2 class="footer__title">Контакты</h2>
-            <img class="footer__image" src="/image/map_coordinate.png" alt="карта расположение главного офиса">
-            <ul class="footer__list condition__contacts">
-                <li class="condition__contacts-item ">
-                    <div class="condition__contacts-wrapper">
-                        <span class="condition__contacts-span">
-                            <img class="condition__contacts-icon" src="/image/homes.svg" alt="Город работы">
-                        </span>
-                        <p class="condition__contacts-title">Город Геленджик</p>
-                    </div>
-                </li>
-                <li class="condition__contacts-item">
-                    <div class="condition__contacts-wrapper">
-                        <span class="condition__contacts-span">
-                            <img class="condition__contacts-icon" src="/image/email.svg" alt="Почта">
-                        </span>
-                        <p class="condition__contacts-title">experience@groupgrand.ru</p>
-                    </div>
-                </li>
-                <li class="condition__contacts-item">
-                    <div class="condition__contacts-wrapper">
-                        <span class="condition__contacts-span">
-                            <img class="condition__contacts-icon" src="/image/phone_new.svg" alt="Номер телефона">
-                        </span>
-                        <p class="condition__contacts-title">+7 928 428-00-62</p>
-                    </div>
-                </li>
-                <li class="condition__contacts-item">
-                    <div class="condition__contacts-wrapper">
-                        <span class="condition__contacts-span">
-                            <img class="condition__contacts-icon" src="/image/clocks.svg" alt="Время работы">
-                        </span>
-                        <div class="condition__contacts-date contacts__date">
-                            <p class="contacts__date-title">Пн - Пт: 9:00 - 18:00</p>
-                            <p class="contacts__date-title">Сб: 9:00 - 17:00 </p>
-                            <p class="contacts__date-title">Вс - выходной</p>
+            <div class="footer__image-wrapper">
+                <img class="footer__image" src="/image/map_coordinate.png" alt="карта расположение главного офиса">
+            </div>
+            <div class="footer__information">
+                <ul class="footer__list condition__contacts">
+                    <li class="condition__contacts-item ">
+                        <div class="condition__contacts-wrapper">
+                            <span class="condition__contacts-span">
+                                <img class="condition__contacts-icon" src="/image/homes.svg" alt="Город работы">
+                            </span>
+                            <p class="condition__contacts-title">Город Геленджик</p>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li class="condition__contacts-item">
+                        <div class="condition__contacts-wrapper">
+                            <span class="condition__contacts-span">
+                                <img class="condition__contacts-icon" src="/image/email.svg" alt="Почта">
+                            </span>
+                            <p class="condition__contacts-title">experience@groupgrand.ru</p>
+                        </div>
+                    </li>
+                    <li class="condition__contacts-item">
+                        <div class="condition__contacts-wrapper">
+                            <span class="condition__contacts-span">
+                                <img class="condition__contacts-icon" src="/image/phone_new.svg" alt="Номер телефона">
+                            </span>
+                            <p class="condition__contacts-title">+7 928 428-00-62</p>
+                        </div>
+                    </li>
+                    <li class="condition__contacts-item">
+                        <div class="condition__contacts-wrapper">
+                            <span class="condition__contacts-span">
+                                <img class="condition__contacts-icon" src="/image/clocks.svg" alt="Время работы">
+                            </span>
+                            <div class="condition__contacts-date contacts__date">
+                                <p class="contacts__date-title">Пн - Пт: 9:00 - 18:00</p>
+                                <p class="contacts__date-title">Сб: 9:00 - 17:00 </p>
+                                <p class="contacts__date-title">Вс - выходной</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="foote__list-of-social-network ">
+                    <h3 class="social-network-connection">Написать нам:</h3>
+                    <a class="social-network__link-whatsapp" href="">
+                        <img class="social-network__image" src="/image/whatsap.svg" alt="иконка ватсап">
+                    </a>
+                    <a class="social-network__link-instagramm" href="">
+                        <img class="social-network__image" src="/image/instagram.svg" alt="иконка инстаграмма">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="foote__list-of-social-network ">
-            <h3 class="social-network-connection">Написать нам:</h3>
-            <a class="social-network__link-whatsapp" href="">
-                <img class="social-network__image" src="/image/whatsap.svg" alt="иконка ватсап">
-            </a>
-            <a class="social-network__link-instagramm" href="">
-                <img class="social-network__image" src="/image/instagram.svg" alt="иконка инстаграмма">
-            </a>
-        </div>
-
         <nav class="footer__navigation navigation">
             <img class="footer__logo" src="/image/logofuter.svg" alt="логотип">
             <ul class="navigation__list">
@@ -583,14 +614,16 @@
                     <a class="navigation__list-link" href="#routs"><span class="navigation__span">Маршруты</span></a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href=""><span class="navigation__span">Галерея</span></a>
+                    <a class="navigation__list-link" href="/grid/grid.html"><span
+                            class="navigation__span">Галерея</span></a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="#questions-answers"><span
+                    <a class="navigation__list-link" href="/form/form.html"><span
                             class="navigation__span">Вопрос-ответ</span></a>
                 </li>
                 <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="#contacts"><span class="navigation__span">Контакты</span></a>
+                    <a class="navigation__list-link" href="/demo/demo.html"><span
+                            class="navigation__span">Контакты</span></a>
                 </li>
                 <li class="navigation__list-item">
                     <a class="navigation__list-link" href="#condition"><span class="navigation__span">Условия</span></a>
@@ -598,18 +631,6 @@
                 <li class="navigation__list-item">
                     <a class="navigation__list-link" href="#specifics"><span
                             class="navigation__span">Спецпредложения</span></a>
-                </li>
-                <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="/grid/grid.html"><span class="navigation__span">Задание с
-                            grid</span></a>
-                </li>
-                <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="/form/form.html"><span class="navigation__span">Задание с
-                            формой</span></a>
-                </li>
-                <li class="navigation__list-item">
-                    <a class="navigation__list-link" href="/demo/demo.html"><span class="navigation__span">Задание
-                            demo</span></a>
                 </li>
             </ul>
         </nav>

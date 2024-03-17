@@ -139,6 +139,7 @@ header {
   width: 100%;
   padding: 0 0 0 0;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   z-index: 1;
 }
@@ -148,11 +149,11 @@ header {
   display: none;
   
 }
-.header__menu-item {
+.menu-item {
   display: none;
   
 }
-.skiplink {
+.menu__link {
   display: none;
 }
 .header__phone {
@@ -248,8 +249,8 @@ header {
 .header__logo {
   width: 50px;
   height: 64px;
-  margin: 10px 20px 0 20px; /* Обновленный margin для центрирования и выравнивания справа */
-  align-self: flex-start; /* Обновленное свойство для выравнивания с верху */
+  margin: 10px 20px 0 20px; 
+  align-self: flex-start; 
 }
 
 .header__burger-menu {
@@ -577,9 +578,8 @@ header {
 .path-discription {
   font-size: 1.4rem;
   margin: 0 0;
-  width: calc(100% - 10px); /* Занимает всю доступную ширину с учетом отступа справа */
+  width: calc(100% - 10px); 
 }
-
 .path__link, .path__link:visited{
   display: block;
   text-decoration: none;
@@ -846,11 +846,7 @@ header {
   font-weight: 600;
 } 
 .team__wrapper {
-  margin: 80px 0 0 0;
-}
-.team{
-  background-color: var(--background-body);
-  margin: 4.8rem 0;
+  margin: 40px 0 0 0;
 }
 .team__title {
   text-align: center;
@@ -935,7 +931,7 @@ header {
 .conditions__wrapper {
   padding: 0.9rem;
   background-image: url("/image/sec_five_back.svg");
-  margin: 4.2rem 0 0 0;
+  margin: 1.5rem 0 0 0;
 
 }
 .detail__wrapper {
@@ -962,7 +958,7 @@ header {
 }
 
 .detail__description {
-  margin: 0 0 0 2.5rem; /* Изменяем отступы параграфа */
+  margin: 0 0 0 2.5rem; 
   padding: 0 1.3rem;
   color: #121214;
   font-size: 1.4rem;
@@ -1566,7 +1562,7 @@ header {
   position: absolute;
   z-index: 1;
   left: -0.1rem;
-  top: 20rem
+  top: 14rem
 }
 
 
@@ -1580,7 +1576,7 @@ header {
 }
  
 .footer__logo {
-  padding: 0.5rem 0 12rem 0;
+  padding: 5px 30px;
 }
 
 .navigation__list {
@@ -1614,8 +1610,8 @@ header {
 
 @media only screen and (min-width: 320px) {
   .imgser__body {
-    width: 100%; /* Ширина будет 100% на экранах шириной 320px и меньше */
-    height: 200px; /* Автоматическая высота для поддержки адаптивности */
+    width: 100%; 
+    height: 200px; 
   }
   .navigation {
     display: flex;
@@ -1661,8 +1657,8 @@ header {
 }
 @media only screen and (min-width: 380px) {
   .imgser__body {
-    width: 100%; /* Ширина будет 100% на экранах шириной 320px и меньше */
-    height: 200px; /* Автоматическая высота для поддержки адаптивности */
+    width: 40rem; 
+    height: 200px; 
   }
 
   .advantages__list-item {
@@ -1738,6 +1734,7 @@ header {
 .imgser {
   padding: 0 40px;
 }
+
 }
 
 @media only screen and (min-width: 520px) {
@@ -1918,13 +1915,16 @@ header {
   flex-basis: 0%;
 }
 .person {
-  flex-basis: 0%;
+  flex: 0 0 15%; 
 }
+
 .person__image  {
-  width: auto;
-  border-radius: 9px;
-  height: 17.9rem
+  width: 100%; 
+  height: auto; 
+  border-radius: 9px; 
 }
+
+
 .advantages__list-title {
   font-size: 1.8rem;
 }
@@ -1986,6 +1986,7 @@ header {
 .imgser {
   padding: 0 170px;
 }
+
 }
 @media only screen and (min-width: 750px) {
   .advantages__list {
@@ -2153,18 +2154,72 @@ header {
   }
 }
 @media only screen and (min-width: 1023px) {
-  .advantages__list {
-    justify-content: center;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: row;
-    gap: 5px;
-    padding: 0 30px;
+  .maining {
+    background-image: url("/image/decstop_pgh.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0; 
   }
+  .maining__information{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 120px;
+    color: var(--background-body);
+    background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%);
+  }
+  .slider {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 30px;
+  }
+  .slider {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 30px;
+    transform: rotate(90deg); 
+    transform-origin: left top; 
+    position: absolute; 
+    top: 100px; 
+    left: calc(100% - 50px);
+}
+
 .imgser {
   padding: 0 310px;
 }
+.team {
+  position: relative; 
+  overflow: hidden; 
+  background-color: none;
+}
+
+.team::before,
+.team::after {
+  content: ''; 
+  position: absolute; 
+  z-index: -1;
+}
+
+.team::before {
+  top: 110px; 
+  left: 0px;
+  width: 31%; 
+  height: 100%; 
+  background-image: url('/image/канистра2.svg'); 
+  background-size: contain;
+}
+
+.team::after {
+  top: calc(55% - 350px);  /* Расположение по вертикали - середина окна минус половина высоты элемента */
+  left: calc(50% + 250px); /* Расположение по горизонтали - середина окна плюс половина ширины элемента */
+  width: 560px;  /* Ширина элемента */
+  height: 700px; /* Высота элемента */
+  background-image: url('/image/бампер2.svg'); /* Фоновое изображение */
+  background-size: contain; /* Масштабирование фонового изображения для заполнения контейнера */
+}
+
+
 .navigation__list {
   list-style: none;
   padding: 0 0 1rem 0;
@@ -2185,16 +2240,102 @@ header {
     width: calc(160px * 1.5); 
     height: calc(175px * 1.5); 
   }
-}
-@media only screen and (min-width: 1025px) and (max-width: 2050px) {
-  .maining {
-    background-image: url("/image/decstop_pgh.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 0;
-    margin: 0; 
+  .triallogic__wrapper {
+    display: flex;
+    flex-direction: row;
   }
-  
+  .triallogic__wrapper._reversed {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .slider__photo.__reversed {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin: 30px 0;
+  }
+  .slider__car.__reversed {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer__copyright {
+    text-align: center; 
+    bottom: 0; 
+    left: 0; 
+}
+.offers-list__wraper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 0 0;
+}
+.offers-list__item {
+  border-radius: 9px;
+  background-color: var(--highlighted-text);
+  min-width: 50rem;
+  margin: 1rem auto; 
+  background-image: url(/image/figure_bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 23rem;
+  position: relative;
+  display: flex;
+  flex-direction: row; 
+}
+.offers-list__link, .offers-list__link:visited {
+  display: block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 18.20px;
+  word-wrap: break-word;
+  max-width: fit-content;
+  color: var(--attention-text);
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+  padding: 6px 10px;
+  border: 1px solid #037E8C;
+}
+.footer__wrapp {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-template-rows: auto auto auto; 
+  gap: 20px; 
+}
+
+.footer__title {
+  grid-row: 1 / span 1; 
+  grid-column: 1 / span 1; 
+}
+
+.condition__contacts {
+  width: 520px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px; 
+  column-count: 2;
+}
+
+.footer__information {
+  grid-row: 3 / span 1; 
+  grid-column: 1 / span 1; 
+}
+
+.footer__image {
+  grid-row: 1 / span 3; 
+  grid-column: 2 / span 1; 
+}
+
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2050px) {
+
   .advantages__list {
     justify-content: center;
     list-style: none;
@@ -2217,14 +2358,15 @@ header {
   display: flex;
   flex-direction: row;
   width: 600px;
+  justify-content: end;
   list-style: none;
 }
-.header__menu-item {
+.menu-item {
   margin-top: 20px;
   width: 30%;
   display: block;
 }
-.skiplink, skiplink:visited{
+.menu__link, skiplink:visited{
   display: block;
   text-decoration: none;
   color: var(--highlighted-text);
@@ -2236,10 +2378,10 @@ header {
   font-family: Montserrat;
   font-weight: 600;
 }
-.skiplink.__activeted {
+.menu__link.__activeted {
   color: var(--attention-text);
 }
-.skiplink:hover{
+.menu__link:hover{
   display: block;
   text-decoration: none;
   color: #b6b6b6;
@@ -2251,7 +2393,7 @@ header {
   font-family: Montserrat;
   font-weight: 600;
 }
-.skiplink:active{
+.menu__link:active{
   display: block;
   text-decoration: none;
   color: #969696;
@@ -2263,7 +2405,7 @@ header {
   font-family: Montserrat;
   font-weight: 600;
 }
-.skiplink:focus{
+.menu__link:focus{
   display: block;
   text-decoration: none;
   color: #969696;
@@ -2341,7 +2483,7 @@ header {
   width: 70px;
   border-bottom: solid 3px var(--attention-text);
   position: absolute;
-  left: -20%;
+  left: -90px;
   top: 11px;
   z-index: 1;
 }
@@ -2349,6 +2491,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+}
+.present__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .detail {
   width: calc(33.33% - 10px); 
@@ -2374,9 +2520,8 @@ header {
   background-position: bottom right;
   background-size: 23rem;
   position: relative;
-
-  display: flex; /* Добавлено */
-  flex-direction: row; /* Добавлено */
+  display: flex;
+  flex-direction: row; 
 }
 
 .offers__span {
@@ -2393,23 +2538,6 @@ header {
   font-weight: bold;
 }
 
-.offers-list__link, .offers-list__link:visited {
-  display: block;
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-family: Montserrat;
-  font-weight: 600;
-  line-height: 18.20px;
-  word-wrap: break-word;
-  max-width: fit-content;
-  color: var(--attention-text);
-  background-color: transparent;
-  text-align: center;
-  border-radius: 5px;
-  padding: 6px 20px;
-  border: 1px solid #037E8C;
-}
-
 .offers-list__image {
   width: 100%; 
   max-height: 20rem;
@@ -2417,12 +2545,6 @@ header {
   border-radius: 9px;
   z-index: 1;
   display: block;
-}
-
-.offers-list__wraper {
-  position: relative;
-  width: 100%;
-  margin: 0 0;
 }
 
 .offers-list__title {
@@ -2458,13 +2580,7 @@ header {
   align-self: flex-start;
 }
 
-.slider__car {
-  align-self: flex-end;
-}
 
-.slider__photo {
-  align-self: flex-end; 
-}
 .slider__car-image,
   .slider__car-image3 {
     width: calc(200px * 1.5); 
@@ -2500,7 +2616,7 @@ header {
   
   .questioner {
     margin: 20px 0 50px 0;
-    flex-grow: 1; /* Занимает доступное пространство по вертикали */
+    flex-grow: 1; 
   }
   
   .questioner__header {
@@ -2550,36 +2666,67 @@ header {
     font-family: Montserrat;
     font-weight: 600;
   }
-  .footer__wrapp {
-    display: flex;
-    flex-direction: row; 
-    align-items: flex-start; 
-  }
-  
-  .footer__title {
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  
-  .footer__image {
-    max-width: 50%; 
-    margin-top: 10px;
-    max-height: 24rem;
-    align-self: flex-end;
-  }
-  
-  .condition__contacts {
-    width: 100%; 
-    margin-top: 10px; 
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+  .footer__image-wrapper {
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+    position: relative;
+    height: 0;
+    padding-top: 30%; 
+}
+
+.footer__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
   .social-network {
     display: flex;
     flex-direction: row;
     margin-top: 10px; 
   }
-  
+.footer__information {
+    grid-column: 1 / span 1; 
+    grid-row: 2 / span 1; 
+}
+
+.footer__title::before {
+  content: '';
+  width: 480px;
+  border-bottom: solid 3px var(--attention-text);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0
+}
+
+  .navigation__list {
+    list-style: none;
+    padding: 0 0 1rem 0;
+    margin: 0 0 0 11.4rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction:row;
+    
+  }
+  .navigation__list-item {
+    width: 150px;
+    padding: 1rem 0 0 0;
+  }
+  .footer__logo {
+    padding: 5px 30px;
+  }
+  .navigation::after{
+    content: '';
+    width: 100%;
+    border-bottom: solid 0.1rem var(--basic-text);
+    position: absolute;
+    z-index: 1;
+    left: -0.1rem;
+    top: 8rem
+  }
 }
