@@ -100,12 +100,12 @@ header {
   padding: 10px 15px;
   color: #ffffff;
   background: #208083;
-  transform: translateY(-200%);
+  transform: translateY(-420%);
   transition: transform 0.3s ease; 
 }
 
 .skip-link:focus {
-  transform: translateY(20%);
+  transform: translateY(50%);
 }
 
 
