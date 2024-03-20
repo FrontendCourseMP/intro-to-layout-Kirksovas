@@ -72,6 +72,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
+  background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%);
 }
 
 *::selection {
@@ -86,39 +87,28 @@ header {
 .present__link:hover,
 .questioner__link:hover {
     transition: all 0.3s ease;
-    transform: scale(1.1); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.219); 
 }
 
 .skip-link {
   display: block;
   position: absolute;
-  text-decoration: none;
+  text-decoration: none;;
   top: 100px;
   left: 85%;
   border-radius: 9px;
   padding: 10px 15px;
   color: #ffffff;
   background: #208083;
+  transform: translateY(-200%);
+  transition: transform 0.3s ease; 
 }
+
 .skip-link:focus {
-  display: block;
-  position: absolute;
-  text-decoration: none;
-  border-radius: 9px;
-  padding: 10px 15px;
-  color: #d3d3d3;
-  background: #176264;
+  transform: translateY(20%);
 }
-.skip-link:hover {
-  display: block;
-  position: absolute;
-  text-decoration: none;
-  border-radius: 9px;
-  padding: 10px 15px;
-  color: #bebebe;
-  background: #14595c;
-}
+
+
 .span {
   font-weight: bold;
 }
@@ -131,11 +121,10 @@ header {
 .offers-list__link:hover,
 .present__link:hover,
 .questioner__link:hover {
-    transition: all 0.3s ease; /* Применяется к любым изменениям, длительность 0.3 секунды с плавностью ease */
+    transition: all 0.3s ease;
 }
 
 .header__wrapper {
-  background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%);
   width: 100%;
   padding: 0 0 0 0;
   display: flex;
@@ -262,11 +251,11 @@ header {
   background-color: transparent;
 }
 .maining {
-  background-image: url("/image/bg1rev.png");
+  background-image: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%), url("/image/bg1rev.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .maining__information{
@@ -275,7 +264,6 @@ header {
   flex-direction: column;
   padding: 0 0 5px 0;
   color: var(--background-body);
-  background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%);
 }
 
 .maining__content {
@@ -2154,8 +2142,16 @@ header {
   }
 }
 @media only screen and (min-width: 1023px) {
+  
+  .content__wrapper.__decstop {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .maining {
-    background-image: url("/image/decstop_pgh.jpg");
+    background-image: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%), url("/image/decstop_pgh.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 0;
@@ -2167,7 +2163,6 @@ header {
     flex-direction: column;
     padding: 120px;
     color: var(--background-body);
-    background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%);
   }
   .slider {
     display: flex;
@@ -2193,33 +2188,100 @@ header {
   overflow: hidden; 
   background-color: none;
 }
+.certificate {
+  background-color: var(--highlighted-text);
+  background-image: url("/image/sec_five_back.svg");
+  margin: 0 0;
+}
+.team::before {
+  content: ''; 
+  position: absolute; 
+  z-index: -1;
+  top: 120px; 
+  left: 0px;
+  width: 750px; 
+  height: 450px; 
+  background-image: url('/image/канистра2.svg'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-.team::before,
 .team::after {
   content: ''; 
   position: absolute; 
   z-index: -1;
+  top: calc(55% - 350px);  
+  left: calc(100% - 20%); 
+  width: 500px;  
+  height: 650px; 
+  background-image: url('/image/бампер2.svg'); 
+  background-size: contain; 
 }
-
-.team::before {
-  top: 110px; 
+.help {
+  background-color: var(--basic-text);
+  color: var(--background-body);
+  margin: 0 0;
+  background-image: url("/image/sec_four_back.svg");
+}
+.special-offers {
+  position: relative; 
+  overflow: hidden; 
+  background-color: none;
+  background-repeat: no-repeat;
+}
+.special-offers::before  {
+  content: ''; 
+  position: absolute; 
+  z-index: -1;
+  top: 50px;  
+  left: calc(100% - 25%); 
+  width: 560px;  
+  height: 700px; 
+  background-image: url('/image/деталька1.svg'); 
+  background-size: contain; 
+}
+.special-offers::after  {
+  content: ''; 
+  position: absolute; 
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: -40px;
   left: 0px;
-  width: 31%; 
+  width: 100%; 
   height: 100%; 
-  background-image: url('/image/канистра2.svg'); 
+  background-image: url('/image/багги2.svg'); 
   background-size: contain;
 }
 
-.team::after {
-  top: calc(55% - 350px);  /* Расположение по вертикали - середина окна минус половина высоты элемента */
-  left: calc(50% + 250px); /* Расположение по горизонтали - середина окна плюс половина ширины элемента */
-  width: 560px;  /* Ширина элемента */
-  height: 700px; /* Высота элемента */
-  background-image: url('/image/бампер2.svg'); /* Фоновое изображение */
-  background-size: contain; /* Масштабирование фонового изображения для заполнения контейнера */
+.question-answer {
+  position: relative; 
+  overflow: hidden; 
+  background-color: none;
+  background-repeat: no-repeat;
 }
-
-
+.question-answer::before  {
+  content: ''; 
+  position: absolute; 
+  z-index: -1;
+  top: -170px;  
+  left: calc(100% - 19%); 
+  width: 750px;  
+  height: 550px;
+  background-image: url('/image/багги3.svg'); 
+  background-size: contain; 
+}
+.question-answer::after  {
+  content: ''; 
+  position: absolute; 
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 150px;
+  left: 0px;
+  width: 100%; 
+  height: 100%; 
+  background-image: url('/image/пружина2.svg'); 
+  background-size: contain;
+}
 .navigation__list {
   list-style: none;
   padding: 0 0 1rem 0;
@@ -2336,6 +2398,7 @@ header {
 
 @media only screen and (min-width: 1025px) and (max-width: 2050px) {
 
+
   .advantages__list {
     justify-content: center;
     list-style: none;
@@ -2381,44 +2444,6 @@ header {
 .menu__link.__activeted {
   color: var(--attention-text);
 }
-.menu__link:hover{
-  display: block;
-  text-decoration: none;
-  color: #b6b6b6;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-  margin: 0;
-  font-size: 1.4rem;
-  font-family: Montserrat;
-  font-weight: 600;
-}
-.menu__link:active{
-  display: block;
-  text-decoration: none;
-  color: #969696;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-  margin: 0;
-  font-size: 1.4rem;
-  font-family: Montserrat;
-  font-weight: 600;
-}
-.menu__link:focus{
-  display: block;
-  text-decoration: none;
-  color: #969696;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-  margin: 0;
-  font-size: 1.4rem;
-  font-family: Montserrat;
-  font-weight: 600;
-  outline: none;
-  box-shadow: 0 0 3px rgba(1, 42, 43, 0.5);
-}
 .header__phone {
   position: relative;
   text-align: center;
@@ -2439,10 +2464,8 @@ header {
   text-decoration: none;
 }
 
-.phone__link, phone__link:visited {
-  display: block;
-  align-items: center;
-  justify-content: center; 
+.phone__link {
+  display: inline-block;
   position: relative;
   text-decoration: none;
   border-radius: 9px;
@@ -2453,6 +2476,29 @@ header {
   margin-left: 20px;
   margin-top: 5px;
   padding: 10px 10px;
+  transition: transform 0.3s ease; 
+}
+
+.phone__link:hover,
+.phone__link:active,
+.phone__link:focus {
+  transform: scale(1.1);
+}
+
+.phone__link:hover {
+  background-color: #9c9c9c5e;
+}
+
+.phone__link:active {
+  background-color: #9c9c9c5e;
+  color: rgb(177, 177, 177);
+  padding: 20px 10px;
+}
+
+.phone__link:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(1, 42, 43, 0.5);
+  padding: 20px 20px;
 }
 .phone__img {
   padding: 0 10px;
